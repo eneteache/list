@@ -82,19 +82,14 @@ function columnas(especialidades: Record<string, string>) {
     // `undefined` (ver runInterinos, scraper/interinos.js), y sin este `??
     // undefined` los excluidos (sin posición) se cuelan al PRINCIPIO en vez
     // de al final al ordenar por esta columna en ascendente.
+    // Sin columna de Bloque aparte: el orden ya lo dice (todo Bloque I antes
+    // que cualquier Bloque II, ver runInterinos, scraper/interinos.js) — la
+    // columna "Nota oposición" ya distingue el caso en su tooltip.
     columnHelper.accessor((r) => r.posicion ?? undefined, {
       id: 'posicion',
       header: '#',
       cell: (info) => info.getValue() ?? '—',
       sortUndefined: 'last',
-    }),
-    columnHelper.accessor('bloque', {
-      header: 'Bloque',
-      cell: (info) => (
-        <span title={info.getValue() === 'I' ? 'Ya superó la oposición de esta especialidad desde 2000' : 'Nunca ha superado la oposición de esta especialidad desde 2000'}>
-          {info.getValue()}
-        </span>
-      ),
     }),
     columnHelper.accessor('nombre', { header: 'Apellidos y nombre' }),
     columnHelper.accessor('nif', { header: 'NIF' }),
