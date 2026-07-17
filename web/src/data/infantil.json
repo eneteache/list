@@ -4,7 +4,7 @@
   "convocatoria": "OPOPRI26",
   "general": {
     "plazas": 370,
-    "notaCorte": 7.858,
+    "notaCorte": 7.8836,
     "notaCorteProvisional": false
   },
   "discapacidad": {
@@ -12,7 +12,7 @@
     "notaCorte": 4.3291,
     "notaCorteProvisional": false
   },
-  "generadoEn": "2026-07-17T16:35:44.651Z",
+  "generadoEn": "2026-07-17T17:44:28.409Z",
   "tribunales": [
     {
       "tribunal": "01",
@@ -2562,6 +2562,29 @@
       "plazaObtenida": true
     },
     {
+      "id": "05|***3749**|ABRIL ROCAMORA, AGATA",
+      "tribunal": "05",
+      "turno": "general",
+      "orden": "02480",
+      "nif": "***3749**",
+      "nombre": "ABRIL ROCAMORA, AGATA",
+      "parteA": 4.335,
+      "parteB": 3.72,
+      "notaFase1": 8.055,
+      "notaFase2": 8.976,
+      "notaConcurso": 10,
+      "apartado1": 5,
+      "apartado2": 3.5,
+      "apartado3": 2,
+      "notaOposicion": 8.5155,
+      "estadoOposicion": "aprobado",
+      "notaFinal": 9.0103,
+      "notaFinalAprox": null,
+      "posicion": 96,
+      "posicionProvisional": false,
+      "plazaObtenida": true
+    },
+    {
       "id": "06|***3469**|AMADOR CABRERA, ANA",
       "tribunal": "06",
       "turno": "general",
@@ -2580,7 +2603,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 9.0057,
       "notaFinalAprox": null,
-      "posicion": 96,
+      "posicion": 97,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2603,7 +2626,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 9.0055,
       "notaFinalAprox": null,
-      "posicion": 97,
+      "posicion": 98,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2626,7 +2649,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.9973,
       "notaFinalAprox": null,
-      "posicion": 98,
+      "posicion": 99,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2649,7 +2672,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.9954,
       "notaFinalAprox": null,
-      "posicion": 99,
+      "posicion": 100,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2672,7 +2695,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.9937,
       "notaFinalAprox": null,
-      "posicion": 100,
+      "posicion": 101,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2695,7 +2718,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.9831,
       "notaFinalAprox": null,
-      "posicion": 101,
+      "posicion": 102,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2718,7 +2741,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.962,
       "notaFinalAprox": null,
-      "posicion": 102,
+      "posicion": 103,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2741,7 +2764,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.9607,
       "notaFinalAprox": null,
-      "posicion": 103,
+      "posicion": 104,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2764,7 +2787,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.9505,
       "notaFinalAprox": null,
-      "posicion": 104,
+      "posicion": 105,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2787,7 +2810,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.945,
       "notaFinalAprox": null,
-      "posicion": 105,
+      "posicion": 106,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2810,7 +2833,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.94,
       "notaFinalAprox": null,
-      "posicion": 106,
+      "posicion": 107,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2833,7 +2856,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.9277,
       "notaFinalAprox": null,
-      "posicion": 107,
+      "posicion": 108,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2856,7 +2879,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.9231,
       "notaFinalAprox": null,
-      "posicion": 108,
+      "posicion": 109,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2879,7 +2902,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.9223,
       "notaFinalAprox": null,
-      "posicion": 109,
+      "posicion": 110,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2902,7 +2925,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.9017,
       "notaFinalAprox": null,
-      "posicion": 110,
+      "posicion": 111,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2925,7 +2948,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.9,
       "notaFinalAprox": null,
-      "posicion": 111,
+      "posicion": 112,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2948,7 +2971,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.895,
       "notaFinalAprox": null,
-      "posicion": 112,
+      "posicion": 113,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2971,7 +2994,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.8946,
       "notaFinalAprox": null,
-      "posicion": 113,
+      "posicion": 114,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -2994,7 +3017,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.891,
       "notaFinalAprox": null,
-      "posicion": 114,
+      "posicion": 115,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3017,7 +3040,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.8845,
       "notaFinalAprox": null,
-      "posicion": 115,
+      "posicion": 116,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3040,7 +3063,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.8833,
       "notaFinalAprox": null,
-      "posicion": 116,
+      "posicion": 117,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3063,7 +3086,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.8724,
       "notaFinalAprox": null,
-      "posicion": 117,
+      "posicion": 118,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3086,7 +3109,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.8709,
       "notaFinalAprox": null,
-      "posicion": 118,
+      "posicion": 119,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3109,7 +3132,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.8616,
       "notaFinalAprox": null,
-      "posicion": 119,
+      "posicion": 120,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3132,7 +3155,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.8608,
       "notaFinalAprox": null,
-      "posicion": 120,
+      "posicion": 121,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3155,7 +3178,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.8316,
       "notaFinalAprox": null,
-      "posicion": 121,
+      "posicion": 122,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3178,7 +3201,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.8313,
       "notaFinalAprox": null,
-      "posicion": 122,
+      "posicion": 123,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3201,7 +3224,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.8253,
       "notaFinalAprox": null,
-      "posicion": 123,
+      "posicion": 124,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3224,7 +3247,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.8056,
       "notaFinalAprox": null,
-      "posicion": 124,
+      "posicion": 125,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3247,30 +3270,30 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.805,
       "notaFinalAprox": null,
-      "posicion": 125,
+      "posicion": 126,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
     {
-      "id": "05|***3749**|ABRIL ROCAMORA, AGATA",
+      "id": "05|***9859**|ALCARAZ BORGOÑOZ, SEILA",
       "tribunal": "05",
       "turno": "general",
-      "orden": "02480",
-      "nif": "***3749**",
-      "nombre": "ABRIL ROCAMORA, AGATA",
-      "parteA": 4.335,
-      "parteB": 3.72,
-      "notaFase1": 8.055,
-      "notaFase2": 8.976,
-      "notaConcurso": 9.3745,
-      "apartado1": 3.8745,
-      "apartado2": 3.5,
+      "orden": "02920",
+      "nif": "***9859**",
+      "nombre": "ALCARAZ BORGOÑOZ, SEILA",
+      "parteA": 3.81,
+      "parteB": 3.905,
+      "notaFase1": 7.715,
+      "notaFase2": 9.16,
+      "notaConcurso": 9.533,
+      "apartado1": 4.833,
+      "apartado2": 2.7,
       "apartado3": 2,
-      "notaOposicion": 8.5155,
+      "notaOposicion": 8.4375,
       "estadoOposicion": "aprobado",
-      "notaFinal": 8.8018,
+      "notaFinal": 8.8027,
       "notaFinalAprox": null,
-      "posicion": 126,
+      "posicion": 127,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3293,7 +3316,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7974,
       "notaFinalAprox": null,
-      "posicion": 127,
+      "posicion": 128,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3316,7 +3339,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7972,
       "notaFinalAprox": null,
-      "posicion": 128,
+      "posicion": 129,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3339,7 +3362,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7939,
       "notaFinalAprox": null,
-      "posicion": 129,
+      "posicion": 130,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3362,7 +3385,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7937,
       "notaFinalAprox": null,
-      "posicion": 130,
+      "posicion": 131,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3385,7 +3408,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7903,
       "notaFinalAprox": null,
-      "posicion": 131,
+      "posicion": 132,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3408,7 +3431,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7897,
       "notaFinalAprox": null,
-      "posicion": 132,
+      "posicion": 133,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3431,7 +3454,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.785,
       "notaFinalAprox": null,
-      "posicion": 133,
+      "posicion": 134,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3454,7 +3477,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7783,
       "notaFinalAprox": null,
-      "posicion": 134,
+      "posicion": 135,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3477,7 +3500,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7778,
       "notaFinalAprox": null,
-      "posicion": 135,
+      "posicion": 136,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3500,7 +3523,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7768,
       "notaFinalAprox": null,
-      "posicion": 136,
+      "posicion": 137,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3523,7 +3546,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7641,
       "notaFinalAprox": null,
-      "posicion": 137,
+      "posicion": 138,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3546,7 +3569,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7571,
       "notaFinalAprox": null,
-      "posicion": 138,
+      "posicion": 139,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3569,7 +3592,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.749,
       "notaFinalAprox": null,
-      "posicion": 139,
+      "posicion": 140,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3592,7 +3615,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7453,
       "notaFinalAprox": null,
-      "posicion": 140,
+      "posicion": 141,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3615,7 +3638,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7371,
       "notaFinalAprox": null,
-      "posicion": 141,
+      "posicion": 142,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3638,7 +3661,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7307,
       "notaFinalAprox": null,
-      "posicion": 142,
+      "posicion": 143,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3661,7 +3684,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7303,
       "notaFinalAprox": null,
-      "posicion": 143,
+      "posicion": 144,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3684,7 +3707,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7291,
       "notaFinalAprox": null,
-      "posicion": 144,
+      "posicion": 145,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3707,7 +3730,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.724,
       "notaFinalAprox": null,
-      "posicion": 145,
+      "posicion": 146,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3730,7 +3753,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7199,
       "notaFinalAprox": null,
-      "posicion": 146,
+      "posicion": 147,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3753,7 +3776,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7181,
       "notaFinalAprox": null,
-      "posicion": 147,
+      "posicion": 148,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3776,7 +3799,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7172,
       "notaFinalAprox": null,
-      "posicion": 148,
+      "posicion": 149,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3799,7 +3822,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7053,
       "notaFinalAprox": null,
-      "posicion": 149,
+      "posicion": 150,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3822,7 +3845,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.7025,
       "notaFinalAprox": null,
-      "posicion": 150,
+      "posicion": 151,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3845,7 +3868,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.694,
       "notaFinalAprox": null,
-      "posicion": 151,
+      "posicion": 152,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3868,7 +3891,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6913,
       "notaFinalAprox": null,
-      "posicion": 152,
+      "posicion": 153,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3891,7 +3914,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6905,
       "notaFinalAprox": null,
-      "posicion": 153,
+      "posicion": 154,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3914,7 +3937,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6858,
       "notaFinalAprox": null,
-      "posicion": 154,
+      "posicion": 155,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3937,7 +3960,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.685,
       "notaFinalAprox": null,
-      "posicion": 155,
+      "posicion": 156,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3960,7 +3983,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6837,
       "notaFinalAprox": null,
-      "posicion": 156,
+      "posicion": 157,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -3983,7 +4006,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6811,
       "notaFinalAprox": null,
-      "posicion": 157,
+      "posicion": 158,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4006,7 +4029,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6765,
       "notaFinalAprox": null,
-      "posicion": 158,
+      "posicion": 159,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4029,7 +4052,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6629,
       "notaFinalAprox": null,
-      "posicion": 159,
+      "posicion": 160,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4052,7 +4075,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6544,
       "notaFinalAprox": null,
-      "posicion": 160,
+      "posicion": 161,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4075,7 +4098,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6517,
       "notaFinalAprox": null,
-      "posicion": 161,
+      "posicion": 162,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4098,7 +4121,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6505,
       "notaFinalAprox": null,
-      "posicion": 162,
+      "posicion": 163,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4121,7 +4144,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6471,
       "notaFinalAprox": null,
-      "posicion": 163,
+      "posicion": 164,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4144,7 +4167,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6442,
       "notaFinalAprox": null,
-      "posicion": 164,
+      "posicion": 165,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4167,7 +4190,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6413,
       "notaFinalAprox": null,
-      "posicion": 165,
+      "posicion": 166,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4190,7 +4213,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6413,
       "notaFinalAprox": null,
-      "posicion": 166,
+      "posicion": 167,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4213,7 +4236,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6315,
       "notaFinalAprox": null,
-      "posicion": 167,
+      "posicion": 168,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4236,7 +4259,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6287,
       "notaFinalAprox": null,
-      "posicion": 168,
+      "posicion": 169,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4259,7 +4282,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6272,
       "notaFinalAprox": null,
-      "posicion": 169,
+      "posicion": 170,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4282,7 +4305,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6258,
       "notaFinalAprox": null,
-      "posicion": 170,
+      "posicion": 171,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4305,7 +4328,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6172,
       "notaFinalAprox": null,
-      "posicion": 171,
+      "posicion": 172,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4328,7 +4351,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6149,
       "notaFinalAprox": null,
-      "posicion": 172,
+      "posicion": 173,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4351,7 +4374,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6144,
       "notaFinalAprox": null,
-      "posicion": 173,
+      "posicion": 174,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4374,7 +4397,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6137,
       "notaFinalAprox": null,
-      "posicion": 174,
+      "posicion": 175,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4397,7 +4420,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6032,
       "notaFinalAprox": null,
-      "posicion": 175,
+      "posicion": 176,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4420,7 +4443,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.6028,
       "notaFinalAprox": null,
-      "posicion": 176,
+      "posicion": 177,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4443,7 +4466,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.601,
       "notaFinalAprox": null,
-      "posicion": 177,
+      "posicion": 178,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4466,7 +4489,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5998,
       "notaFinalAprox": null,
-      "posicion": 178,
+      "posicion": 179,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4489,7 +4512,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5989,
       "notaFinalAprox": null,
-      "posicion": 179,
+      "posicion": 180,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4512,7 +4535,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5939,
       "notaFinalAprox": null,
-      "posicion": 180,
+      "posicion": 181,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4535,7 +4558,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5937,
       "notaFinalAprox": null,
-      "posicion": 181,
+      "posicion": 182,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4558,7 +4581,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5917,
       "notaFinalAprox": null,
-      "posicion": 182,
+      "posicion": 183,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4581,7 +4604,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5814,
       "notaFinalAprox": null,
-      "posicion": 183,
+      "posicion": 184,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4604,7 +4627,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.58,
       "notaFinalAprox": null,
-      "posicion": 184,
+      "posicion": 185,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4627,7 +4650,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5779,
       "notaFinalAprox": null,
-      "posicion": 185,
+      "posicion": 186,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4650,7 +4673,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.566,
       "notaFinalAprox": null,
-      "posicion": 186,
+      "posicion": 187,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4673,7 +4696,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.561,
       "notaFinalAprox": null,
-      "posicion": 187,
+      "posicion": 188,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4696,7 +4719,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5544,
       "notaFinalAprox": null,
-      "posicion": 188,
+      "posicion": 189,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4719,7 +4742,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5517,
       "notaFinalAprox": null,
-      "posicion": 189,
+      "posicion": 190,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4742,7 +4765,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5487,
       "notaFinalAprox": null,
-      "posicion": 190,
+      "posicion": 191,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4765,7 +4788,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5461,
       "notaFinalAprox": null,
-      "posicion": 191,
+      "posicion": 192,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4788,7 +4811,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5392,
       "notaFinalAprox": null,
-      "posicion": 192,
+      "posicion": 193,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4811,7 +4834,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.532,
       "notaFinalAprox": null,
-      "posicion": 193,
+      "posicion": 194,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4834,7 +4857,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.531,
       "notaFinalAprox": null,
-      "posicion": 194,
+      "posicion": 195,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4857,7 +4880,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5212,
       "notaFinalAprox": null,
-      "posicion": 195,
+      "posicion": 196,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4880,7 +4903,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5199,
       "notaFinalAprox": null,
-      "posicion": 196,
+      "posicion": 197,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4903,7 +4926,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5116,
       "notaFinalAprox": null,
-      "posicion": 197,
+      "posicion": 198,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4926,7 +4949,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.51,
       "notaFinalAprox": null,
-      "posicion": 198,
+      "posicion": 199,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4949,7 +4972,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.5016,
       "notaFinalAprox": null,
-      "posicion": 199,
+      "posicion": 200,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4972,7 +4995,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4967,
       "notaFinalAprox": null,
-      "posicion": 200,
+      "posicion": 201,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -4995,7 +5018,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.492,
       "notaFinalAprox": null,
-      "posicion": 201,
+      "posicion": 202,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5018,7 +5041,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4897,
       "notaFinalAprox": null,
-      "posicion": 202,
+      "posicion": 203,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5041,7 +5064,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4867,
       "notaFinalAprox": null,
-      "posicion": 203,
+      "posicion": 204,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5064,7 +5087,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4845,
       "notaFinalAprox": null,
-      "posicion": 204,
+      "posicion": 205,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5087,7 +5110,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4817,
       "notaFinalAprox": null,
-      "posicion": 205,
+      "posicion": 206,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5110,7 +5133,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4812,
       "notaFinalAprox": null,
-      "posicion": 206,
+      "posicion": 207,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5133,7 +5156,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.48,
       "notaFinalAprox": null,
-      "posicion": 207,
+      "posicion": 208,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5156,7 +5179,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4784,
       "notaFinalAprox": null,
-      "posicion": 208,
+      "posicion": 209,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5179,7 +5202,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4757,
       "notaFinalAprox": null,
-      "posicion": 209,
+      "posicion": 210,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5202,7 +5225,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4722,
       "notaFinalAprox": null,
-      "posicion": 210,
+      "posicion": 211,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5225,7 +5248,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4719,
       "notaFinalAprox": null,
-      "posicion": 211,
+      "posicion": 212,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5248,7 +5271,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4703,
       "notaFinalAprox": null,
-      "posicion": 212,
+      "posicion": 213,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5271,7 +5294,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4661,
       "notaFinalAprox": null,
-      "posicion": 213,
+      "posicion": 214,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5294,7 +5317,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4633,
       "notaFinalAprox": null,
-      "posicion": 214,
+      "posicion": 215,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5317,7 +5340,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4621,
       "notaFinalAprox": null,
-      "posicion": 215,
+      "posicion": 216,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5340,7 +5363,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4583,
       "notaFinalAprox": null,
-      "posicion": 216,
+      "posicion": 217,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5363,7 +5386,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4581,
       "notaFinalAprox": null,
-      "posicion": 217,
+      "posicion": 218,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5386,7 +5409,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4493,
       "notaFinalAprox": null,
-      "posicion": 218,
+      "posicion": 219,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5409,7 +5432,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4483,
       "notaFinalAprox": null,
-      "posicion": 219,
+      "posicion": 220,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5432,7 +5455,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4417,
       "notaFinalAprox": null,
-      "posicion": 220,
+      "posicion": 221,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5455,7 +5478,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4367,
       "notaFinalAprox": null,
-      "posicion": 221,
+      "posicion": 222,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5478,7 +5501,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4207,
       "notaFinalAprox": null,
-      "posicion": 222,
+      "posicion": 223,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5501,7 +5524,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4167,
       "notaFinalAprox": null,
-      "posicion": 223,
+      "posicion": 224,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5524,7 +5547,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4128,
       "notaFinalAprox": null,
-      "posicion": 224,
+      "posicion": 225,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5547,7 +5570,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4112,
       "notaFinalAprox": null,
-      "posicion": 225,
+      "posicion": 226,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5570,7 +5593,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4023,
       "notaFinalAprox": null,
-      "posicion": 226,
+      "posicion": 227,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5593,7 +5616,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4008,
       "notaFinalAprox": null,
-      "posicion": 227,
+      "posicion": 228,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5616,7 +5639,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.4005,
       "notaFinalAprox": null,
-      "posicion": 228,
+      "posicion": 229,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5639,7 +5662,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3983,
       "notaFinalAprox": null,
-      "posicion": 229,
+      "posicion": 230,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5662,7 +5685,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3977,
       "notaFinalAprox": null,
-      "posicion": 230,
+      "posicion": 231,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5685,7 +5708,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3957,
       "notaFinalAprox": null,
-      "posicion": 231,
+      "posicion": 232,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5708,7 +5731,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3957,
       "notaFinalAprox": null,
-      "posicion": 232,
+      "posicion": 233,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5731,7 +5754,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3955,
       "notaFinalAprox": null,
-      "posicion": 233,
+      "posicion": 234,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5754,7 +5777,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3937,
       "notaFinalAprox": null,
-      "posicion": 234,
+      "posicion": 235,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5777,7 +5800,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3903,
       "notaFinalAprox": null,
-      "posicion": 235,
+      "posicion": 236,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5800,7 +5823,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.388,
       "notaFinalAprox": null,
-      "posicion": 236,
+      "posicion": 237,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5823,7 +5846,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.384,
       "notaFinalAprox": null,
-      "posicion": 237,
+      "posicion": 238,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5846,7 +5869,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3805,
       "notaFinalAprox": null,
-      "posicion": 238,
+      "posicion": 239,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5869,7 +5892,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3803,
       "notaFinalAprox": null,
-      "posicion": 239,
+      "posicion": 240,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5892,7 +5915,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3795,
       "notaFinalAprox": null,
-      "posicion": 240,
+      "posicion": 241,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5915,7 +5938,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3777,
       "notaFinalAprox": null,
-      "posicion": 241,
+      "posicion": 242,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5938,7 +5961,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3772,
       "notaFinalAprox": null,
-      "posicion": 242,
+      "posicion": 243,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5961,7 +5984,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3745,
       "notaFinalAprox": null,
-      "posicion": 243,
+      "posicion": 244,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -5984,7 +6007,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3739,
       "notaFinalAprox": null,
-      "posicion": 244,
+      "posicion": 245,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6007,7 +6030,30 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3655,
       "notaFinalAprox": null,
-      "posicion": 245,
+      "posicion": 246,
+      "posicionProvisional": false,
+      "plazaObtenida": true
+    },
+    {
+      "id": "05|***8396**|ACOSTA GARCIA, EVA MARIA",
+      "tribunal": "05",
+      "turno": "general",
+      "orden": "02510",
+      "nif": "***8396**",
+      "nombre": "ACOSTA GARCIA, EVA MARIA",
+      "parteA": 4.65,
+      "parteB": 3.04,
+      "notaFase1": 7.69,
+      "notaFase2": 7.406,
+      "notaConcurso": 10,
+      "apartado1": 5,
+      "apartado2": 3.7,
+      "apartado3": 2,
+      "notaOposicion": 7.548,
+      "estadoOposicion": "aprobado",
+      "notaFinal": 8.3653,
+      "notaFinalAprox": null,
+      "posicion": 247,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6030,7 +6076,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3637,
       "notaFinalAprox": null,
-      "posicion": 246,
+      "posicion": 248,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6053,7 +6099,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3593,
       "notaFinalAprox": null,
-      "posicion": 247,
+      "posicion": 249,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6076,7 +6122,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3567,
       "notaFinalAprox": null,
-      "posicion": 248,
+      "posicion": 250,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6099,7 +6145,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3532,
       "notaFinalAprox": null,
-      "posicion": 249,
+      "posicion": 251,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6122,7 +6168,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3497,
       "notaFinalAprox": null,
-      "posicion": 250,
+      "posicion": 252,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6145,7 +6191,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3471,
       "notaFinalAprox": null,
-      "posicion": 251,
+      "posicion": 253,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6168,7 +6214,30 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3428,
       "notaFinalAprox": null,
-      "posicion": 252,
+      "posicion": 254,
+      "posicionProvisional": false,
+      "plazaObtenida": true
+    },
+    {
+      "id": "05|***3687**|ABELLAN ABRIL, MARIA EUGENIA",
+      "tribunal": "05",
+      "turno": "general",
+      "orden": "02310",
+      "nif": "***3687**",
+      "nombre": "ABELLAN ABRIL, MARIA EUGENIA",
+      "parteA": 4.24,
+      "parteB": 2.515,
+      "notaFase1": 6.755,
+      "notaFase2": 8.974,
+      "notaConcurso": 9.2913,
+      "apartado1": 4.2913,
+      "apartado2": 3,
+      "apartado3": 2,
+      "notaOposicion": 7.8645,
+      "estadoOposicion": "aprobado",
+      "notaFinal": 8.3401,
+      "notaFinalAprox": null,
+      "posicion": 255,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6191,7 +6260,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.34,
       "notaFinalAprox": null,
-      "posicion": 253,
+      "posicion": 256,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6214,7 +6283,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3333,
       "notaFinalAprox": null,
-      "posicion": 254,
+      "posicion": 257,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6237,7 +6306,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3307,
       "notaFinalAprox": null,
-      "posicion": 255,
+      "posicion": 258,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6260,7 +6329,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3301,
       "notaFinalAprox": null,
-      "posicion": 256,
+      "posicion": 259,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6283,7 +6352,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3263,
       "notaFinalAprox": null,
-      "posicion": 257,
+      "posicion": 260,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6306,7 +6375,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.325,
       "notaFinalAprox": null,
-      "posicion": 258,
+      "posicion": 261,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6329,7 +6398,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3229,
       "notaFinalAprox": null,
-      "posicion": 259,
+      "posicion": 262,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6352,7 +6421,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3121,
       "notaFinalAprox": null,
-      "posicion": 260,
+      "posicion": 263,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6375,7 +6444,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3104,
       "notaFinalAprox": null,
-      "posicion": 261,
+      "posicion": 264,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6398,7 +6467,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.307,
       "notaFinalAprox": null,
-      "posicion": 262,
+      "posicion": 265,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6421,7 +6490,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.3,
       "notaFinalAprox": null,
-      "posicion": 263,
+      "posicion": 266,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6444,7 +6513,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2938,
       "notaFinalAprox": null,
-      "posicion": 264,
+      "posicion": 267,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6467,7 +6536,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2858,
       "notaFinalAprox": null,
-      "posicion": 265,
+      "posicion": 268,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6490,7 +6559,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2857,
       "notaFinalAprox": null,
-      "posicion": 266,
+      "posicion": 269,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6513,7 +6582,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.285,
       "notaFinalAprox": null,
-      "posicion": 267,
+      "posicion": 270,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6536,7 +6605,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2763,
       "notaFinalAprox": null,
-      "posicion": 268,
+      "posicion": 271,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6559,30 +6628,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2708,
       "notaFinalAprox": null,
-      "posicion": 269,
-      "posicionProvisional": false,
-      "plazaObtenida": true
-    },
-    {
-      "id": "05|***8396**|ACOSTA GARCIA, EVA MARIA",
-      "tribunal": "05",
-      "turno": "general",
-      "orden": "02510",
-      "nif": "***8396**",
-      "nombre": "ACOSTA GARCIA, EVA MARIA",
-      "parteA": 4.65,
-      "parteB": 3.04,
-      "notaFase1": 7.69,
-      "notaFase2": 7.406,
-      "notaConcurso": 9.7,
-      "apartado1": 5,
-      "apartado2": 2.7,
-      "apartado3": 2,
-      "notaOposicion": 7.548,
-      "estadoOposicion": "aprobado",
-      "notaFinal": 8.2653,
-      "notaFinalAprox": null,
-      "posicion": 270,
+      "posicion": 272,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6605,7 +6651,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2566,
       "notaFinalAprox": null,
-      "posicion": 271,
+      "posicion": 273,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6628,7 +6674,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2505,
       "notaFinalAprox": null,
-      "posicion": 272,
+      "posicion": 274,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6651,7 +6697,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.245,
       "notaFinalAprox": null,
-      "posicion": 273,
+      "posicion": 275,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6674,7 +6720,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2427,
       "notaFinalAprox": null,
-      "posicion": 274,
+      "posicion": 276,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6697,7 +6743,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2417,
       "notaFinalAprox": null,
-      "posicion": 275,
+      "posicion": 277,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6720,7 +6766,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2325,
       "notaFinalAprox": null,
-      "posicion": 276,
+      "posicion": 278,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6743,7 +6789,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2315,
       "notaFinalAprox": null,
-      "posicion": 277,
+      "posicion": 279,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6766,7 +6812,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2243,
       "notaFinalAprox": null,
-      "posicion": 278,
+      "posicion": 280,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6789,7 +6835,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2232,
       "notaFinalAprox": null,
-      "posicion": 279,
+      "posicion": 281,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6812,7 +6858,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2192,
       "notaFinalAprox": null,
-      "posicion": 280,
+      "posicion": 282,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6835,7 +6881,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2077,
       "notaFinalAprox": null,
-      "posicion": 281,
+      "posicion": 283,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6858,7 +6904,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.2057,
       "notaFinalAprox": null,
-      "posicion": 282,
+      "posicion": 284,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6881,7 +6927,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1952,
       "notaFinalAprox": null,
-      "posicion": 283,
+      "posicion": 285,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6904,7 +6950,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1948,
       "notaFinalAprox": null,
-      "posicion": 284,
+      "posicion": 286,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6927,7 +6973,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1933,
       "notaFinalAprox": null,
-      "posicion": 285,
+      "posicion": 287,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6950,7 +6996,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1867,
       "notaFinalAprox": null,
-      "posicion": 286,
+      "posicion": 288,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6973,7 +7019,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1867,
       "notaFinalAprox": null,
-      "posicion": 287,
+      "posicion": 289,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -6996,7 +7042,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1841,
       "notaFinalAprox": null,
-      "posicion": 288,
+      "posicion": 290,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7019,7 +7065,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1837,
       "notaFinalAprox": null,
-      "posicion": 289,
+      "posicion": 291,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7042,7 +7088,30 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1722,
       "notaFinalAprox": null,
-      "posicion": 290,
+      "posicion": 292,
+      "posicionProvisional": false,
+      "plazaObtenida": true
+    },
+    {
+      "id": "05|***3767**|ABARCA PINAR, PRISCA",
+      "tribunal": "05",
+      "turno": "general",
+      "orden": "02300",
+      "nif": "***3767**",
+      "nombre": "ABARCA PINAR, PRISCA",
+      "parteA": 4.425,
+      "parteB": 4.235,
+      "notaFase1": 8.66,
+      "notaFase2": 7.342,
+      "notaConcurso": 8.5,
+      "apartado1": 3,
+      "apartado2": 3.5,
+      "apartado3": 2,
+      "notaOposicion": 8.001,
+      "estadoOposicion": "aprobado",
+      "notaFinal": 8.1673,
+      "notaFinalAprox": null,
+      "posicion": 293,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7065,7 +7134,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1628,
       "notaFinalAprox": null,
-      "posicion": 291,
+      "posicion": 294,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7088,7 +7157,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1577,
       "notaFinalAprox": null,
-      "posicion": 292,
+      "posicion": 295,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7111,7 +7180,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1555,
       "notaFinalAprox": null,
-      "posicion": 293,
+      "posicion": 296,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7134,7 +7203,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1505,
       "notaFinalAprox": null,
-      "posicion": 294,
+      "posicion": 297,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7157,7 +7226,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1495,
       "notaFinalAprox": null,
-      "posicion": 295,
+      "posicion": 298,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7180,7 +7249,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1451,
       "notaFinalAprox": null,
-      "posicion": 296,
+      "posicion": 299,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7203,7 +7272,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1393,
       "notaFinalAprox": null,
-      "posicion": 297,
+      "posicion": 300,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7226,7 +7295,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1347,
       "notaFinalAprox": null,
-      "posicion": 298,
+      "posicion": 301,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7249,7 +7318,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1166,
       "notaFinalAprox": null,
-      "posicion": 299,
+      "posicion": 302,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7272,7 +7341,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1146,
       "notaFinalAprox": null,
-      "posicion": 300,
+      "posicion": 303,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7295,7 +7364,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1127,
       "notaFinalAprox": null,
-      "posicion": 301,
+      "posicion": 304,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7318,7 +7387,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1071,
       "notaFinalAprox": null,
-      "posicion": 302,
+      "posicion": 305,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7341,7 +7410,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1054,
       "notaFinalAprox": null,
-      "posicion": 303,
+      "posicion": 306,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7364,7 +7433,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.1011,
       "notaFinalAprox": null,
-      "posicion": 304,
+      "posicion": 307,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7387,7 +7456,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0967,
       "notaFinalAprox": null,
-      "posicion": 305,
+      "posicion": 308,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7410,7 +7479,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0924,
       "notaFinalAprox": null,
-      "posicion": 306,
+      "posicion": 309,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7433,7 +7502,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.092,
       "notaFinalAprox": null,
-      "posicion": 307,
+      "posicion": 310,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7456,7 +7525,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0874,
       "notaFinalAprox": null,
-      "posicion": 308,
+      "posicion": 311,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7479,7 +7548,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0872,
       "notaFinalAprox": null,
-      "posicion": 309,
+      "posicion": 312,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7502,7 +7571,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0843,
       "notaFinalAprox": null,
-      "posicion": 310,
+      "posicion": 313,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7525,7 +7594,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0802,
       "notaFinalAprox": null,
-      "posicion": 311,
+      "posicion": 314,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7548,7 +7617,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0783,
       "notaFinalAprox": null,
-      "posicion": 312,
+      "posicion": 315,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7571,7 +7640,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0725,
       "notaFinalAprox": null,
-      "posicion": 313,
+      "posicion": 316,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7594,7 +7663,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.07,
       "notaFinalAprox": null,
-      "posicion": 314,
+      "posicion": 317,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7617,30 +7686,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0699,
       "notaFinalAprox": null,
-      "posicion": 315,
-      "posicionProvisional": false,
-      "plazaObtenida": true
-    },
-    {
-      "id": "05|***9859**|ALCARAZ BORGOÑOZ, SEILA",
-      "tribunal": "05",
-      "turno": "general",
-      "orden": "02920",
-      "nif": "***9859**",
-      "nombre": "ALCARAZ BORGOÑOZ, SEILA",
-      "parteA": 3.81,
-      "parteB": 3.905,
-      "notaFase1": 7.715,
-      "notaFase2": 9.16,
-      "notaConcurso": 7.333,
-      "apartado1": 4.833,
-      "apartado2": 1.5,
-      "apartado3": 1,
-      "notaOposicion": 8.4375,
-      "estadoOposicion": "aprobado",
-      "notaFinal": 8.0693,
-      "notaFinalAprox": null,
-      "posicion": 316,
+      "posicion": 318,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7663,7 +7709,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0655,
       "notaFinalAprox": null,
-      "posicion": 317,
+      "posicion": 319,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7686,7 +7732,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0566,
       "notaFinalAprox": null,
-      "posicion": 318,
+      "posicion": 320,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7709,7 +7755,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.055,
       "notaFinalAprox": null,
-      "posicion": 319,
+      "posicion": 321,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7732,7 +7778,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0522,
       "notaFinalAprox": null,
-      "posicion": 320,
+      "posicion": 322,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7755,7 +7801,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0478,
       "notaFinalAprox": null,
-      "posicion": 321,
+      "posicion": 323,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7778,7 +7824,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0478,
       "notaFinalAprox": null,
-      "posicion": 322,
+      "posicion": 324,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7801,7 +7847,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0439,
       "notaFinalAprox": null,
-      "posicion": 323,
+      "posicion": 325,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7824,7 +7870,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0429,
       "notaFinalAprox": null,
-      "posicion": 324,
+      "posicion": 326,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7847,7 +7893,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0355,
       "notaFinalAprox": null,
-      "posicion": 325,
+      "posicion": 327,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7870,7 +7916,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0337,
       "notaFinalAprox": null,
-      "posicion": 326,
+      "posicion": 328,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7893,7 +7939,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0267,
       "notaFinalAprox": null,
-      "posicion": 327,
+      "posicion": 329,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7916,7 +7962,30 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.026,
       "notaFinalAprox": null,
-      "posicion": 328,
+      "posicion": 330,
+      "posicionProvisional": false,
+      "plazaObtenida": true
+    },
+    {
+      "id": "05|***1807**|ALBALADEJO RUIZ, ROSARIO",
+      "tribunal": "05",
+      "turno": "general",
+      "orden": "02750",
+      "nif": "***1807**",
+      "nombre": "ALBALADEJO RUIZ, ROSARIO",
+      "parteA": 3.855,
+      "parteB": 3.605,
+      "notaFase1": 7.46,
+      "notaFase2": 8.478,
+      "notaConcurso": 8.1243,
+      "apartado1": 3.1243,
+      "apartado2": 3,
+      "apartado3": 2,
+      "notaOposicion": 7.969,
+      "estadoOposicion": "aprobado",
+      "notaFinal": 8.0208,
+      "notaFinalAprox": null,
+      "posicion": 331,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7939,7 +8008,30 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0194,
       "notaFinalAprox": null,
-      "posicion": 329,
+      "posicion": 332,
+      "posicionProvisional": false,
+      "plazaObtenida": true
+    },
+    {
+      "id": "05|***7458**|ZAMORANO GARCIA, NATALIA",
+      "tribunal": "05",
+      "turno": "general",
+      "orden": "02250",
+      "nif": "***7458**",
+      "nombre": "ZAMORANO GARCIA, NATALIA",
+      "parteA": 4.005,
+      "parteB": 3.805,
+      "notaFase1": 7.81,
+      "notaFase2": 6.219,
+      "notaConcurso": 9.9998,
+      "apartado1": 4.4998,
+      "apartado2": 3.5,
+      "apartado3": 2,
+      "notaOposicion": 7.0145,
+      "estadoOposicion": "aprobado",
+      "notaFinal": 8.0096,
+      "notaFinalAprox": null,
+      "posicion": 333,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7962,7 +8054,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0094,
       "notaFinalAprox": null,
-      "posicion": 330,
+      "posicion": 334,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -7985,7 +8077,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0061,
       "notaFinalAprox": null,
-      "posicion": 331,
+      "posicion": 335,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8008,7 +8100,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8.0013,
       "notaFinalAprox": null,
-      "posicion": 332,
+      "posicion": 336,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8031,7 +8123,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 8,
       "notaFinalAprox": null,
-      "posicion": 333,
+      "posicion": 337,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8054,7 +8146,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9978,
       "notaFinalAprox": null,
-      "posicion": 334,
+      "posicion": 338,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8077,7 +8169,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9949,
       "notaFinalAprox": null,
-      "posicion": 335,
+      "posicion": 339,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8100,7 +8192,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9931,
       "notaFinalAprox": null,
-      "posicion": 336,
+      "posicion": 340,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8123,7 +8215,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9916,
       "notaFinalAprox": null,
-      "posicion": 337,
+      "posicion": 341,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8146,7 +8238,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9911,
       "notaFinalAprox": null,
-      "posicion": 338,
+      "posicion": 342,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8169,7 +8261,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9905,
       "notaFinalAprox": null,
-      "posicion": 339,
+      "posicion": 343,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8192,7 +8284,30 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9822,
       "notaFinalAprox": null,
-      "posicion": 340,
+      "posicion": 344,
+      "posicionProvisional": false,
+      "plazaObtenida": true
+    },
+    {
+      "id": "05|***4031**|ALARTE RUBIO, BEATRIZ",
+      "tribunal": "05",
+      "turno": "general",
+      "orden": "02690",
+      "nif": "***4031**",
+      "nombre": "ALARTE RUBIO, BEATRIZ",
+      "parteA": 3.46,
+      "parteB": 3.99,
+      "notaFase1": 7.45,
+      "notaFase2": 8.91,
+      "notaConcurso": 7.5833,
+      "apartado1": 3.0833,
+      "apartado2": 2.5,
+      "apartado3": 2,
+      "notaOposicion": 8.18,
+      "estadoOposicion": "aprobado",
+      "notaFinal": 7.9811,
+      "notaFinalAprox": null,
+      "posicion": 345,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8215,7 +8330,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9777,
       "notaFinalAprox": null,
-      "posicion": 341,
+      "posicion": 346,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8238,7 +8353,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9776,
       "notaFinalAprox": null,
-      "posicion": 342,
+      "posicion": 347,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8261,7 +8376,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9755,
       "notaFinalAprox": null,
-      "posicion": 343,
+      "posicion": 348,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8284,7 +8399,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9577,
       "notaFinalAprox": null,
-      "posicion": 344,
+      "posicion": 349,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8307,7 +8422,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9537,
       "notaFinalAprox": null,
-      "posicion": 345,
+      "posicion": 350,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8330,7 +8445,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9444,
       "notaFinalAprox": null,
-      "posicion": 346,
+      "posicion": 351,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8353,7 +8468,30 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9426,
       "notaFinalAprox": null,
-      "posicion": 347,
+      "posicion": 352,
+      "posicionProvisional": false,
+      "plazaObtenida": true
+    },
+    {
+      "id": "05|***3869**|ZAMORA NUÑEZ, ALBA CRISTINA",
+      "tribunal": "05",
+      "turno": "general",
+      "orden": "02230",
+      "nif": "***3869**",
+      "nombre": "ZAMORA NUÑEZ, ALBA CRISTINA",
+      "parteA": 2.1,
+      "parteB": 3.08,
+      "notaFase1": 5.18,
+      "notaFase2": 8.644,
+      "notaConcurso": 10,
+      "apartado1": 4.2499,
+      "apartado2": 4,
+      "apartado3": 2,
+      "notaOposicion": 6.912,
+      "estadoOposicion": "aprobado",
+      "notaFinal": 7.9413,
+      "notaFinalAprox": null,
+      "posicion": 353,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8376,7 +8514,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9407,
       "notaFinalAprox": null,
-      "posicion": 348,
+      "posicion": 354,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8399,7 +8537,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9401,
       "notaFinalAprox": null,
-      "posicion": 349,
+      "posicion": 355,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8422,7 +8560,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9399,
       "notaFinalAprox": null,
-      "posicion": 350,
+      "posicion": 356,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8445,7 +8583,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9312,
       "notaFinalAprox": null,
-      "posicion": 351,
+      "posicion": 357,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8468,7 +8606,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9187,
       "notaFinalAprox": null,
-      "posicion": 352,
+      "posicion": 358,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8491,30 +8629,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.918,
       "notaFinalAprox": null,
-      "posicion": 353,
-      "posicionProvisional": false,
-      "plazaObtenida": true
-    },
-    {
-      "id": "05|***1807**|ALBALADEJO RUIZ, ROSARIO",
-      "tribunal": "05",
-      "turno": "general",
-      "orden": "02750",
-      "nif": "***1807**",
-      "nombre": "ALBALADEJO RUIZ, ROSARIO",
-      "parteA": 3.855,
-      "parteB": 3.605,
-      "notaFase1": 7.46,
-      "notaFase2": 8.478,
-      "notaConcurso": 7.8119,
-      "apartado1": 2.8119,
-      "apartado2": 3,
-      "apartado3": 2,
-      "notaOposicion": 7.969,
-      "estadoOposicion": "aprobado",
-      "notaFinal": 7.9166,
-      "notaFinalAprox": null,
-      "posicion": 354,
+      "posicion": 359,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8537,7 +8652,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9148,
       "notaFinalAprox": null,
-      "posicion": 355,
+      "posicion": 360,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8560,7 +8675,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9131,
       "notaFinalAprox": null,
-      "posicion": 356,
+      "posicion": 361,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8583,30 +8698,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9107,
       "notaFinalAprox": null,
-      "posicion": 357,
-      "posicionProvisional": false,
-      "plazaObtenida": true
-    },
-    {
-      "id": "05|***3687**|ABELLAN ABRIL, MARIA EUGENIA",
-      "tribunal": "05",
-      "turno": "general",
-      "orden": "02310",
-      "nif": "***3687**",
-      "nombre": "ABELLAN ABRIL, MARIA EUGENIA",
-      "parteA": 4.24,
-      "parteB": 2.515,
-      "notaFase1": 6.755,
-      "notaFase2": 8.974,
-      "notaConcurso": 7.9994,
-      "apartado1": 2.9994,
-      "apartado2": 3,
-      "apartado3": 2,
-      "notaOposicion": 7.8645,
-      "estadoOposicion": "aprobado",
-      "notaFinal": 7.9095,
-      "notaFinalAprox": null,
-      "posicion": 358,
+      "posicion": 362,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8629,7 +8721,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9086,
       "notaFinalAprox": null,
-      "posicion": 359,
+      "posicion": 363,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8652,7 +8744,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9061,
       "notaFinalAprox": null,
-      "posicion": 360,
+      "posicion": 364,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8675,7 +8767,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.9042,
       "notaFinalAprox": null,
-      "posicion": 361,
+      "posicion": 365,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8698,7 +8790,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8932,
       "notaFinalAprox": null,
-      "posicion": 362,
+      "posicion": 366,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8721,7 +8813,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8928,
       "notaFinalAprox": null,
-      "posicion": 363,
+      "posicion": 367,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8744,7 +8836,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8889,
       "notaFinalAprox": null,
-      "posicion": 364,
+      "posicion": 368,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8767,7 +8859,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8866,
       "notaFinalAprox": null,
-      "posicion": 365,
+      "posicion": 369,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8790,7 +8882,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8836,
       "notaFinalAprox": null,
-      "posicion": 366,
+      "posicion": 370,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -8813,9 +8905,9 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8827,
       "notaFinalAprox": null,
-      "posicion": 367,
+      "posicion": 371,
       "posicionProvisional": false,
-      "plazaObtenida": true
+      "plazaObtenida": false
     },
     {
       "id": "18|***2242**|GARCIA ORTIZ, LAURA",
@@ -8836,9 +8928,9 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8796,
       "notaFinalAprox": null,
-      "posicion": 368,
+      "posicion": 372,
       "posicionProvisional": false,
-      "plazaObtenida": true
+      "plazaObtenida": false
     },
     {
       "id": "34|***5075**|OLIVARES JIMENEZ, KARINA",
@@ -8859,32 +8951,9 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.866,
       "notaFinalAprox": null,
-      "posicion": 369,
+      "posicion": 373,
       "posicionProvisional": false,
-      "plazaObtenida": true
-    },
-    {
-      "id": "05|***3869**|ZAMORA NUÑEZ, ALBA CRISTINA",
-      "tribunal": "05",
-      "turno": "general",
-      "orden": "02230",
-      "nif": "***3869**",
-      "nombre": "ZAMORA NUÑEZ, ALBA CRISTINA",
-      "parteA": 2.1,
-      "parteB": 3.08,
-      "notaFase1": 5.18,
-      "notaFase2": 8.644,
-      "notaConcurso": 9.7499,
-      "apartado1": 4.2499,
-      "apartado2": 3.5,
-      "apartado3": 2,
-      "notaOposicion": 6.912,
-      "estadoOposicion": "aprobado",
-      "notaFinal": 7.858,
-      "notaFinalAprox": null,
-      "posicion": 370,
-      "posicionProvisional": false,
-      "plazaObtenida": true
+      "plazaObtenida": false
     },
     {
       "id": "19|***5543**|GIMENEZ ANDREU, IRENE MARIA",
@@ -8905,7 +8974,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8533,
       "notaFinalAprox": null,
-      "posicion": 371,
+      "posicion": 374,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -8928,30 +8997,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.838,
       "notaFinalAprox": null,
-      "posicion": 372,
-      "posicionProvisional": false,
-      "plazaObtenida": false
-    },
-    {
-      "id": "05|***3767**|ABARCA PINAR, PRISCA",
-      "tribunal": "05",
-      "turno": "general",
-      "orden": "02300",
-      "nif": "***3767**",
-      "nombre": "ABARCA PINAR, PRISCA",
-      "parteA": 4.425,
-      "parteB": 4.235,
-      "notaFase1": 8.66,
-      "notaFase2": 7.342,
-      "notaConcurso": 7.5,
-      "apartado1": 3,
-      "apartado2": 2.5,
-      "apartado3": 2,
-      "notaOposicion": 8.001,
-      "estadoOposicion": "aprobado",
-      "notaFinal": 7.834,
-      "notaFinalAprox": null,
-      "posicion": 373,
+      "posicion": 375,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -8974,7 +9020,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8311,
       "notaFinalAprox": null,
-      "posicion": 374,
+      "posicion": 376,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -8997,7 +9043,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8291,
       "notaFinalAprox": null,
-      "posicion": 375,
+      "posicion": 377,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9020,7 +9066,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8272,
       "notaFinalAprox": null,
-      "posicion": 376,
+      "posicion": 378,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9043,7 +9089,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8267,
       "notaFinalAprox": null,
-      "posicion": 377,
+      "posicion": 379,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9066,7 +9112,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8244,
       "notaFinalAprox": null,
-      "posicion": 378,
+      "posicion": 380,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9089,7 +9135,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8227,
       "notaFinalAprox": null,
-      "posicion": 379,
+      "posicion": 381,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9112,7 +9158,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.82,
       "notaFinalAprox": null,
-      "posicion": 380,
+      "posicion": 382,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9135,7 +9181,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8199,
       "notaFinalAprox": null,
-      "posicion": 381,
+      "posicion": 383,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9158,7 +9204,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8194,
       "notaFinalAprox": null,
-      "posicion": 382,
+      "posicion": 384,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9181,7 +9227,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8181,
       "notaFinalAprox": null,
-      "posicion": 383,
+      "posicion": 385,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9204,7 +9250,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8172,
       "notaFinalAprox": null,
-      "posicion": 384,
+      "posicion": 386,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9227,7 +9273,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8125,
       "notaFinalAprox": null,
-      "posicion": 385,
+      "posicion": 387,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9250,7 +9296,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8122,
       "notaFinalAprox": null,
-      "posicion": 386,
+      "posicion": 388,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9273,7 +9319,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8072,
       "notaFinalAprox": null,
-      "posicion": 387,
+      "posicion": 389,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9296,7 +9342,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.8038,
       "notaFinalAprox": null,
-      "posicion": 388,
+      "posicion": 390,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9319,7 +9365,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7995,
       "notaFinalAprox": null,
-      "posicion": 389,
+      "posicion": 391,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9342,7 +9388,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7982,
       "notaFinalAprox": null,
-      "posicion": 390,
+      "posicion": 392,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9365,7 +9411,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7979,
       "notaFinalAprox": null,
-      "posicion": 391,
+      "posicion": 393,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9388,7 +9434,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7916,
       "notaFinalAprox": null,
-      "posicion": 392,
+      "posicion": 394,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9411,7 +9457,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7853,
       "notaFinalAprox": null,
-      "posicion": 393,
+      "posicion": 395,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9434,7 +9480,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7826,
       "notaFinalAprox": null,
-      "posicion": 394,
+      "posicion": 396,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9457,7 +9503,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7675,
       "notaFinalAprox": null,
-      "posicion": 395,
+      "posicion": 397,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9480,7 +9526,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7649,
       "notaFinalAprox": null,
-      "posicion": 396,
+      "posicion": 398,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9503,7 +9549,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7647,
       "notaFinalAprox": null,
-      "posicion": 397,
+      "posicion": 399,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9526,7 +9572,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7632,
       "notaFinalAprox": null,
-      "posicion": 398,
+      "posicion": 400,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9549,7 +9595,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7603,
       "notaFinalAprox": null,
-      "posicion": 399,
+      "posicion": 401,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9572,7 +9618,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7555,
       "notaFinalAprox": null,
-      "posicion": 400,
+      "posicion": 402,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9595,7 +9641,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7546,
       "notaFinalAprox": null,
-      "posicion": 401,
+      "posicion": 403,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9618,7 +9664,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7499,
       "notaFinalAprox": null,
-      "posicion": 402,
+      "posicion": 404,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9641,7 +9687,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7494,
       "notaFinalAprox": null,
-      "posicion": 403,
+      "posicion": 405,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9664,7 +9710,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7488,
       "notaFinalAprox": null,
-      "posicion": 404,
+      "posicion": 406,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9687,7 +9733,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7472,
       "notaFinalAprox": null,
-      "posicion": 405,
+      "posicion": 407,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9710,7 +9756,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7405,
       "notaFinalAprox": null,
-      "posicion": 406,
+      "posicion": 408,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9733,7 +9779,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7405,
       "notaFinalAprox": null,
-      "posicion": 407,
+      "posicion": 409,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9756,7 +9802,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7397,
       "notaFinalAprox": null,
-      "posicion": 408,
+      "posicion": 410,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9779,7 +9825,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7367,
       "notaFinalAprox": null,
-      "posicion": 409,
+      "posicion": 411,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9802,7 +9848,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7345,
       "notaFinalAprox": null,
-      "posicion": 410,
+      "posicion": 412,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9825,7 +9871,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7331,
       "notaFinalAprox": null,
-      "posicion": 411,
+      "posicion": 413,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9848,7 +9894,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7319,
       "notaFinalAprox": null,
-      "posicion": 412,
+      "posicion": 414,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9871,7 +9917,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7252,
       "notaFinalAprox": null,
-      "posicion": 413,
+      "posicion": 415,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9894,7 +9940,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7244,
       "notaFinalAprox": null,
-      "posicion": 414,
+      "posicion": 416,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9917,7 +9963,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7221,
       "notaFinalAprox": null,
-      "posicion": 415,
+      "posicion": 417,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9940,7 +9986,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7196,
       "notaFinalAprox": null,
-      "posicion": 416,
+      "posicion": 418,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9963,7 +10009,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7166,
       "notaFinalAprox": null,
-      "posicion": 417,
+      "posicion": 419,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -9986,7 +10032,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7134,
       "notaFinalAprox": null,
-      "posicion": 418,
+      "posicion": 420,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10009,7 +10055,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.7043,
       "notaFinalAprox": null,
-      "posicion": 419,
+      "posicion": 421,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10032,7 +10078,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6994,
       "notaFinalAprox": null,
-      "posicion": 420,
+      "posicion": 422,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10055,7 +10101,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6984,
       "notaFinalAprox": null,
-      "posicion": 421,
+      "posicion": 423,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10078,7 +10124,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6975,
       "notaFinalAprox": null,
-      "posicion": 422,
+      "posicion": 424,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10101,7 +10147,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6871,
       "notaFinalAprox": null,
-      "posicion": 423,
+      "posicion": 425,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10124,7 +10170,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6847,
       "notaFinalAprox": null,
-      "posicion": 424,
+      "posicion": 426,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10147,7 +10193,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.681,
       "notaFinalAprox": null,
-      "posicion": 425,
+      "posicion": 427,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10170,30 +10216,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6779,
       "notaFinalAprox": null,
-      "posicion": 426,
-      "posicionProvisional": false,
-      "plazaObtenida": false
-    },
-    {
-      "id": "05|***7458**|ZAMORANO GARCIA, NATALIA",
-      "tribunal": "05",
-      "turno": "general",
-      "orden": "02250",
-      "nif": "***7458**",
-      "nombre": "ZAMORANO GARCIA, NATALIA",
-      "parteA": 4.005,
-      "parteB": 3.805,
-      "notaFase1": 7.81,
-      "notaFase2": 6.219,
-      "notaConcurso": 8.9998,
-      "apartado1": 4.4998,
-      "apartado2": 2.5,
-      "apartado3": 2,
-      "notaOposicion": 7.0145,
-      "estadoOposicion": "aprobado",
-      "notaFinal": 7.6763,
-      "notaFinalAprox": null,
-      "posicion": 427,
+      "posicion": 428,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10216,7 +10239,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6727,
       "notaFinalAprox": null,
-      "posicion": 428,
+      "posicion": 429,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10239,7 +10262,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6717,
       "notaFinalAprox": null,
-      "posicion": 429,
+      "posicion": 430,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10262,7 +10285,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6716,
       "notaFinalAprox": null,
-      "posicion": 430,
+      "posicion": 431,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10285,7 +10308,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.67,
       "notaFinalAprox": null,
-      "posicion": 431,
+      "posicion": 432,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10308,7 +10331,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6688,
       "notaFinalAprox": null,
-      "posicion": 432,
+      "posicion": 433,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10331,7 +10354,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6682,
       "notaFinalAprox": null,
-      "posicion": 433,
+      "posicion": 434,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10354,7 +10377,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6677,
       "notaFinalAprox": null,
-      "posicion": 434,
+      "posicion": 435,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10377,7 +10400,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6672,
       "notaFinalAprox": null,
-      "posicion": 435,
+      "posicion": 436,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10400,7 +10423,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6658,
       "notaFinalAprox": null,
-      "posicion": 436,
+      "posicion": 437,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10423,7 +10446,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6648,
       "notaFinalAprox": null,
-      "posicion": 437,
+      "posicion": 438,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10446,7 +10469,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6588,
       "notaFinalAprox": null,
-      "posicion": 438,
+      "posicion": 439,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10469,7 +10492,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6574,
       "notaFinalAprox": null,
-      "posicion": 439,
+      "posicion": 440,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10492,7 +10515,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6549,
       "notaFinalAprox": null,
-      "posicion": 440,
+      "posicion": 441,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10515,7 +10538,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6547,
       "notaFinalAprox": null,
-      "posicion": 441,
+      "posicion": 442,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10538,7 +10561,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6544,
       "notaFinalAprox": null,
-      "posicion": 442,
+      "posicion": 443,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10561,7 +10584,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6504,
       "notaFinalAprox": null,
-      "posicion": 443,
+      "posicion": 444,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10584,7 +10607,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6489,
       "notaFinalAprox": null,
-      "posicion": 444,
+      "posicion": 445,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10607,7 +10630,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6486,
       "notaFinalAprox": null,
-      "posicion": 445,
+      "posicion": 446,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -10629,29 +10652,6 @@
       "notaOposicion": 8.0137,
       "estadoOposicion": "aprobado",
       "notaFinal": 7.6479,
-      "notaFinalAprox": null,
-      "posicion": 446,
-      "posicionProvisional": false,
-      "plazaObtenida": false
-    },
-    {
-      "id": "05|***4031**|ALARTE RUBIO, BEATRIZ",
-      "tribunal": "05",
-      "turno": "general",
-      "orden": "02690",
-      "nif": "***4031**",
-      "nombre": "ALARTE RUBIO, BEATRIZ",
-      "parteA": 3.46,
-      "parteB": 3.99,
-      "notaFase1": 7.45,
-      "notaFase2": 8.91,
-      "notaConcurso": 6.5833,
-      "apartado1": 3.0833,
-      "apartado2": 1.5,
-      "apartado3": 2,
-      "notaOposicion": 8.18,
-      "estadoOposicion": "aprobado",
-      "notaFinal": 7.6478,
       "notaFinalAprox": null,
       "posicion": 447,
       "posicionProvisional": false,
@@ -16339,6 +16339,29 @@
       "plazaObtenida": false
     },
     {
+      "id": "05|***4898**|ALARCON LEAL, NATALIA",
+      "tribunal": "05",
+      "turno": "general",
+      "orden": "02650",
+      "nif": "***4898**",
+      "nombre": "ALARCON LEAL, NATALIA",
+      "parteA": 2.15,
+      "parteB": 3.73,
+      "notaFase1": 5.88,
+      "notaFase2": 9.4896,
+      "notaConcurso": 4.5831,
+      "apartado1": 0.5831,
+      "apartado2": 2.5,
+      "apartado3": 1.5,
+      "notaOposicion": 7.6848,
+      "estadoOposicion": "aprobado",
+      "notaFinal": 6.6509,
+      "notaFinalAprox": null,
+      "posicion": 695,
+      "posicionProvisional": false,
+      "plazaObtenida": false
+    },
+    {
       "id": "13|***5552**|DELGADO RODRIGUEZ, ANA CRISTINA",
       "tribunal": "13",
       "turno": "general",
@@ -16357,7 +16380,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6507,
       "notaFinalAprox": null,
-      "posicion": 695,
+      "posicion": 696,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16380,7 +16403,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6505,
       "notaFinalAprox": null,
-      "posicion": 696,
+      "posicion": 697,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16403,7 +16426,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6496,
       "notaFinalAprox": null,
-      "posicion": 697,
+      "posicion": 698,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16426,7 +16449,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.649,
       "notaFinalAprox": null,
-      "posicion": 698,
+      "posicion": 699,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16449,7 +16472,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6487,
       "notaFinalAprox": null,
-      "posicion": 699,
+      "posicion": 700,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16472,7 +16495,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6443,
       "notaFinalAprox": null,
-      "posicion": 700,
+      "posicion": 701,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16495,7 +16518,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6432,
       "notaFinalAprox": null,
-      "posicion": 701,
+      "posicion": 702,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16518,7 +16541,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6432,
       "notaFinalAprox": null,
-      "posicion": 702,
+      "posicion": 703,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16541,7 +16564,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6409,
       "notaFinalAprox": null,
-      "posicion": 703,
+      "posicion": 704,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16564,7 +16587,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6391,
       "notaFinalAprox": null,
-      "posicion": 704,
+      "posicion": 705,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16587,7 +16610,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6246,
       "notaFinalAprox": null,
-      "posicion": 705,
+      "posicion": 706,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16610,7 +16633,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6233,
       "notaFinalAprox": null,
-      "posicion": 706,
+      "posicion": 707,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16633,7 +16656,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6183,
       "notaFinalAprox": null,
-      "posicion": 707,
+      "posicion": 708,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16656,7 +16679,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6167,
       "notaFinalAprox": null,
-      "posicion": 708,
+      "posicion": 709,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16679,7 +16702,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6105,
       "notaFinalAprox": null,
-      "posicion": 709,
+      "posicion": 710,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16702,7 +16725,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6088,
       "notaFinalAprox": null,
-      "posicion": 710,
+      "posicion": 711,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16725,7 +16748,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6083,
       "notaFinalAprox": null,
-      "posicion": 711,
+      "posicion": 712,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16748,7 +16771,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.6041,
       "notaFinalAprox": null,
-      "posicion": 712,
+      "posicion": 713,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16771,7 +16794,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5987,
       "notaFinalAprox": null,
-      "posicion": 713,
+      "posicion": 714,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16794,7 +16817,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5986,
       "notaFinalAprox": null,
-      "posicion": 714,
+      "posicion": 715,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16817,7 +16840,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5984,
       "notaFinalAprox": null,
-      "posicion": 715,
+      "posicion": 716,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16840,7 +16863,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5983,
       "notaFinalAprox": null,
-      "posicion": 716,
+      "posicion": 717,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16863,7 +16886,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5948,
       "notaFinalAprox": null,
-      "posicion": 717,
+      "posicion": 718,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16886,7 +16909,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5866,
       "notaFinalAprox": null,
-      "posicion": 718,
+      "posicion": 719,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16909,7 +16932,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5782,
       "notaFinalAprox": null,
-      "posicion": 719,
+      "posicion": 720,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16932,7 +16955,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5772,
       "notaFinalAprox": null,
-      "posicion": 720,
+      "posicion": 721,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16955,7 +16978,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5763,
       "notaFinalAprox": null,
-      "posicion": 721,
+      "posicion": 722,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -16978,7 +17001,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5711,
       "notaFinalAprox": null,
-      "posicion": 722,
+      "posicion": 723,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17001,7 +17024,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5677,
       "notaFinalAprox": null,
-      "posicion": 723,
+      "posicion": 724,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17024,7 +17047,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.565,
       "notaFinalAprox": null,
-      "posicion": 724,
+      "posicion": 725,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17047,7 +17070,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.562,
       "notaFinalAprox": null,
-      "posicion": 725,
+      "posicion": 726,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17070,7 +17093,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5597,
       "notaFinalAprox": null,
-      "posicion": 726,
+      "posicion": 727,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17093,7 +17116,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5533,
       "notaFinalAprox": null,
-      "posicion": 727,
+      "posicion": 728,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17116,7 +17139,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5527,
       "notaFinalAprox": null,
-      "posicion": 728,
+      "posicion": 729,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17139,7 +17162,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5522,
       "notaFinalAprox": null,
-      "posicion": 729,
+      "posicion": 730,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17162,7 +17185,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5461,
       "notaFinalAprox": null,
-      "posicion": 730,
+      "posicion": 731,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17185,7 +17208,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5423,
       "notaFinalAprox": null,
-      "posicion": 731,
+      "posicion": 732,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17208,7 +17231,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5403,
       "notaFinalAprox": null,
-      "posicion": 732,
+      "posicion": 733,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17231,7 +17254,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5386,
       "notaFinalAprox": null,
-      "posicion": 733,
+      "posicion": 734,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17254,7 +17277,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5378,
       "notaFinalAprox": null,
-      "posicion": 734,
+      "posicion": 735,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17277,7 +17300,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5333,
       "notaFinalAprox": null,
-      "posicion": 735,
+      "posicion": 736,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17300,7 +17323,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.533,
       "notaFinalAprox": null,
-      "posicion": 736,
+      "posicion": 737,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17323,7 +17346,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.531,
       "notaFinalAprox": null,
-      "posicion": 737,
+      "posicion": 738,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17346,7 +17369,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5172,
       "notaFinalAprox": null,
-      "posicion": 738,
+      "posicion": 739,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17369,7 +17392,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5072,
       "notaFinalAprox": null,
-      "posicion": 739,
+      "posicion": 740,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17392,7 +17415,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.5072,
       "notaFinalAprox": null,
-      "posicion": 740,
+      "posicion": 741,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17415,7 +17438,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.4986,
       "notaFinalAprox": null,
-      "posicion": 741,
+      "posicion": 742,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17438,7 +17461,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.4983,
       "notaFinalAprox": null,
-      "posicion": 742,
+      "posicion": 743,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17461,7 +17484,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.4888,
       "notaFinalAprox": null,
-      "posicion": 743,
+      "posicion": 744,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17484,7 +17507,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 6.4867,
       "notaFinalAprox": null,
-      "posicion": 744,
+      "posicion": 745,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -17506,29 +17529,6 @@
       "notaOposicion": 7.9623,
       "estadoOposicion": "aprobado",
       "notaFinal": 6.4859,
-      "notaFinalAprox": null,
-      "posicion": 745,
-      "posicionProvisional": false,
-      "plazaObtenida": false
-    },
-    {
-      "id": "05|***4898**|ALARCON LEAL, NATALIA",
-      "tribunal": "05",
-      "turno": "general",
-      "orden": "02650",
-      "nif": "***4898**",
-      "nombre": "ALARCON LEAL, NATALIA",
-      "parteA": 2.15,
-      "parteB": 3.73,
-      "notaFase1": 5.88,
-      "notaFase2": 9.4896,
-      "notaConcurso": 4.0831,
-      "apartado1": 0.5831,
-      "apartado2": 2.5,
-      "apartado3": 1,
-      "notaOposicion": 7.6848,
-      "estadoOposicion": "aprobado",
-      "notaFinal": 6.4842,
       "notaFinalAprox": null,
       "posicion": 746,
       "posicionProvisional": false,
@@ -20571,6 +20571,29 @@
       "plazaObtenida": false
     },
     {
+      "id": "05|***4001**|ABELLAN GIL, SANDRA",
+      "tribunal": "05",
+      "turno": "general",
+      "orden": "02350",
+      "nif": "***4001**",
+      "nombre": "ABELLAN GIL, SANDRA",
+      "parteA": 2.845,
+      "parteB": 3.56,
+      "notaFase1": 6.405,
+      "notaFase2": 6.432,
+      "notaConcurso": 5.0916,
+      "apartado1": 1.0416,
+      "apartado2": 2.5,
+      "apartado3": 1.55,
+      "notaOposicion": 6.4185,
+      "estadoOposicion": "aprobado",
+      "notaFinal": 5.9762,
+      "notaFinalAprox": null,
+      "posicion": 879,
+      "posicionProvisional": false,
+      "plazaObtenida": false
+    },
+    {
       "id": "26|***1493**|MAILLO GOMEZ, ALICIA",
       "tribunal": "26",
       "turno": "general",
@@ -20589,7 +20612,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9678,
       "notaFinalAprox": null,
-      "posicion": 879,
+      "posicion": 880,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20612,7 +20635,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9678,
       "notaFinalAprox": null,
-      "posicion": 880,
+      "posicion": 881,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20635,7 +20658,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9634,
       "notaFinalAprox": null,
-      "posicion": 881,
+      "posicion": 882,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20658,7 +20681,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9608,
       "notaFinalAprox": null,
-      "posicion": 882,
+      "posicion": 883,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20681,7 +20704,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9589,
       "notaFinalAprox": null,
-      "posicion": 883,
+      "posicion": 884,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20704,7 +20727,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9579,
       "notaFinalAprox": null,
-      "posicion": 884,
+      "posicion": 885,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20727,7 +20750,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9533,
       "notaFinalAprox": null,
-      "posicion": 885,
+      "posicion": 886,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20750,7 +20773,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9511,
       "notaFinalAprox": null,
-      "posicion": 886,
+      "posicion": 887,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20773,7 +20796,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9453,
       "notaFinalAprox": null,
-      "posicion": 887,
+      "posicion": 888,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20796,7 +20819,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9411,
       "notaFinalAprox": null,
-      "posicion": 888,
+      "posicion": 889,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20819,7 +20842,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.93,
       "notaFinalAprox": null,
-      "posicion": 889,
+      "posicion": 890,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20842,7 +20865,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9288,
       "notaFinalAprox": null,
-      "posicion": 890,
+      "posicion": 891,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20865,7 +20888,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9263,
       "notaFinalAprox": null,
-      "posicion": 891,
+      "posicion": 892,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20888,7 +20911,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9238,
       "notaFinalAprox": null,
-      "posicion": 892,
+      "posicion": 893,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20911,7 +20934,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9211,
       "notaFinalAprox": null,
-      "posicion": 893,
+      "posicion": 894,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20934,7 +20957,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9177,
       "notaFinalAprox": null,
-      "posicion": 894,
+      "posicion": 895,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20957,7 +20980,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9167,
       "notaFinalAprox": null,
-      "posicion": 895,
+      "posicion": 896,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -20980,7 +21003,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9155,
       "notaFinalAprox": null,
-      "posicion": 896,
+      "posicion": 897,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21003,7 +21026,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9149,
       "notaFinalAprox": null,
-      "posicion": 897,
+      "posicion": 898,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21026,7 +21049,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9117,
       "notaFinalAprox": null,
-      "posicion": 898,
+      "posicion": 899,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21049,7 +21072,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.9061,
       "notaFinalAprox": null,
-      "posicion": 899,
+      "posicion": 900,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21072,7 +21095,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8915,
       "notaFinalAprox": null,
-      "posicion": 900,
+      "posicion": 901,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21095,7 +21118,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8869,
       "notaFinalAprox": null,
-      "posicion": 901,
+      "posicion": 902,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21118,7 +21141,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8858,
       "notaFinalAprox": null,
-      "posicion": 902,
+      "posicion": 903,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21141,7 +21164,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8819,
       "notaFinalAprox": null,
-      "posicion": 903,
+      "posicion": 904,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21164,7 +21187,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8678,
       "notaFinalAprox": null,
-      "posicion": 904,
+      "posicion": 905,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21187,7 +21210,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.856,
       "notaFinalAprox": null,
-      "posicion": 905,
+      "posicion": 906,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21210,7 +21233,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8497,
       "notaFinalAprox": null,
-      "posicion": 906,
+      "posicion": 907,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21233,7 +21256,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8411,
       "notaFinalAprox": null,
-      "posicion": 907,
+      "posicion": 908,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21256,7 +21279,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8395,
       "notaFinalAprox": null,
-      "posicion": 908,
+      "posicion": 909,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21279,7 +21302,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8372,
       "notaFinalAprox": null,
-      "posicion": 909,
+      "posicion": 910,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21302,7 +21325,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8354,
       "notaFinalAprox": null,
-      "posicion": 910,
+      "posicion": 911,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21325,7 +21348,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8347,
       "notaFinalAprox": null,
-      "posicion": 911,
+      "posicion": 912,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21348,7 +21371,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8313,
       "notaFinalAprox": null,
-      "posicion": 912,
+      "posicion": 913,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21371,7 +21394,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8312,
       "notaFinalAprox": null,
-      "posicion": 913,
+      "posicion": 914,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21394,7 +21417,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8278,
       "notaFinalAprox": null,
-      "posicion": 914,
+      "posicion": 915,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21417,7 +21440,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8204,
       "notaFinalAprox": null,
-      "posicion": 915,
+      "posicion": 916,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21440,7 +21463,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8197,
       "notaFinalAprox": null,
-      "posicion": 916,
+      "posicion": 917,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21463,7 +21486,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8141,
       "notaFinalAprox": null,
-      "posicion": 917,
+      "posicion": 918,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21486,7 +21509,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8087,
       "notaFinalAprox": null,
-      "posicion": 918,
+      "posicion": 919,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21509,7 +21532,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8079,
       "notaFinalAprox": null,
-      "posicion": 919,
+      "posicion": 920,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21532,7 +21555,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8045,
       "notaFinalAprox": null,
-      "posicion": 920,
+      "posicion": 921,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21555,7 +21578,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8013,
       "notaFinalAprox": null,
-      "posicion": 921,
+      "posicion": 922,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21578,7 +21601,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8005,
       "notaFinalAprox": null,
-      "posicion": 922,
+      "posicion": 923,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21601,7 +21624,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.8002,
       "notaFinalAprox": null,
-      "posicion": 923,
+      "posicion": 924,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21624,7 +21647,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.7951,
       "notaFinalAprox": null,
-      "posicion": 924,
+      "posicion": 925,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21647,7 +21670,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.791,
       "notaFinalAprox": null,
-      "posicion": 925,
+      "posicion": 926,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21670,7 +21693,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.7839,
       "notaFinalAprox": null,
-      "posicion": 926,
+      "posicion": 927,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21693,7 +21716,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.782,
       "notaFinalAprox": null,
-      "posicion": 927,
+      "posicion": 928,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21716,7 +21739,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.7741,
       "notaFinalAprox": null,
-      "posicion": 928,
+      "posicion": 929,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21739,7 +21762,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.7554,
       "notaFinalAprox": null,
-      "posicion": 929,
+      "posicion": 930,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21762,7 +21785,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.7399,
       "notaFinalAprox": null,
-      "posicion": 930,
+      "posicion": 931,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21785,7 +21808,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.7203,
       "notaFinalAprox": null,
-      "posicion": 931,
+      "posicion": 932,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21808,7 +21831,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.7138,
       "notaFinalAprox": null,
-      "posicion": 932,
+      "posicion": 933,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21831,7 +21854,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.7133,
       "notaFinalAprox": null,
-      "posicion": 933,
+      "posicion": 934,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21854,7 +21877,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.7123,
       "notaFinalAprox": null,
-      "posicion": 934,
+      "posicion": 935,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21877,7 +21900,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.7087,
       "notaFinalAprox": null,
-      "posicion": 935,
+      "posicion": 936,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21900,7 +21923,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.7037,
       "notaFinalAprox": null,
-      "posicion": 936,
+      "posicion": 937,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21923,7 +21946,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.7025,
       "notaFinalAprox": null,
-      "posicion": 937,
+      "posicion": 938,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21946,7 +21969,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6882,
       "notaFinalAprox": null,
-      "posicion": 938,
+      "posicion": 939,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21969,7 +21992,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6743,
       "notaFinalAprox": null,
-      "posicion": 939,
+      "posicion": 940,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -21992,7 +22015,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6695,
       "notaFinalAprox": null,
-      "posicion": 940,
+      "posicion": 941,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22015,7 +22038,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6667,
       "notaFinalAprox": null,
-      "posicion": 941,
+      "posicion": 942,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22038,7 +22061,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.659,
       "notaFinalAprox": null,
-      "posicion": 942,
+      "posicion": 943,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22061,7 +22084,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6555,
       "notaFinalAprox": null,
-      "posicion": 943,
+      "posicion": 944,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22084,7 +22107,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6461,
       "notaFinalAprox": null,
-      "posicion": 944,
+      "posicion": 945,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22107,7 +22130,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6457,
       "notaFinalAprox": null,
-      "posicion": 945,
+      "posicion": 946,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22130,7 +22153,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6443,
       "notaFinalAprox": null,
-      "posicion": 946,
+      "posicion": 947,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22153,7 +22176,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6421,
       "notaFinalAprox": null,
-      "posicion": 947,
+      "posicion": 948,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22176,7 +22199,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6253,
       "notaFinalAprox": null,
-      "posicion": 948,
+      "posicion": 949,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22199,7 +22222,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6225,
       "notaFinalAprox": null,
-      "posicion": 949,
+      "posicion": 950,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22222,7 +22245,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6213,
       "notaFinalAprox": null,
-      "posicion": 950,
+      "posicion": 951,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22245,7 +22268,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.619,
       "notaFinalAprox": null,
-      "posicion": 951,
+      "posicion": 952,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22268,7 +22291,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6081,
       "notaFinalAprox": null,
-      "posicion": 952,
+      "posicion": 953,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22291,7 +22314,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6067,
       "notaFinalAprox": null,
-      "posicion": 953,
+      "posicion": 954,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22314,7 +22337,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6052,
       "notaFinalAprox": null,
-      "posicion": 954,
+      "posicion": 955,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22337,7 +22360,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.605,
       "notaFinalAprox": null,
-      "posicion": 955,
+      "posicion": 956,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22360,7 +22383,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6041,
       "notaFinalAprox": null,
-      "posicion": 956,
+      "posicion": 957,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22383,7 +22406,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.6017,
       "notaFinalAprox": null,
-      "posicion": 957,
+      "posicion": 958,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22406,7 +22429,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.5915,
       "notaFinalAprox": null,
-      "posicion": 958,
+      "posicion": 959,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22429,7 +22452,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.5747,
       "notaFinalAprox": null,
-      "posicion": 959,
+      "posicion": 960,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22452,7 +22475,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.5633,
       "notaFinalAprox": null,
-      "posicion": 960,
+      "posicion": 961,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22475,7 +22498,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.5633,
       "notaFinalAprox": null,
-      "posicion": 961,
+      "posicion": 962,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22498,7 +22521,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.5575,
       "notaFinalAprox": null,
-      "posicion": 962,
+      "posicion": 963,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22521,7 +22544,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.549,
       "notaFinalAprox": null,
-      "posicion": 963,
+      "posicion": 964,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22544,7 +22567,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.5218,
       "notaFinalAprox": null,
-      "posicion": 964,
+      "posicion": 965,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22567,7 +22590,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.5208,
       "notaFinalAprox": null,
-      "posicion": 965,
+      "posicion": 966,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22590,7 +22613,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.52,
       "notaFinalAprox": null,
-      "posicion": 966,
+      "posicion": 967,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22613,7 +22636,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.5194,
       "notaFinalAprox": null,
-      "posicion": 967,
+      "posicion": 968,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22636,7 +22659,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.5125,
       "notaFinalAprox": null,
-      "posicion": 968,
+      "posicion": 969,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22659,7 +22682,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.5105,
       "notaFinalAprox": null,
-      "posicion": 969,
+      "posicion": 970,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22682,7 +22705,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.505,
       "notaFinalAprox": null,
-      "posicion": 970,
+      "posicion": 971,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22705,7 +22728,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.5008,
       "notaFinalAprox": null,
-      "posicion": 971,
+      "posicion": 972,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22728,7 +22751,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4983,
       "notaFinalAprox": null,
-      "posicion": 972,
+      "posicion": 973,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22751,7 +22774,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4982,
       "notaFinalAprox": null,
-      "posicion": 973,
+      "posicion": 974,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22774,7 +22797,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4917,
       "notaFinalAprox": null,
-      "posicion": 974,
+      "posicion": 975,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22797,7 +22820,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4911,
       "notaFinalAprox": null,
-      "posicion": 975,
+      "posicion": 976,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22820,7 +22843,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4873,
       "notaFinalAprox": null,
-      "posicion": 976,
+      "posicion": 977,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22843,7 +22866,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4861,
       "notaFinalAprox": null,
-      "posicion": 977,
+      "posicion": 978,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22866,7 +22889,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4813,
       "notaFinalAprox": null,
-      "posicion": 978,
+      "posicion": 979,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22889,7 +22912,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4738,
       "notaFinalAprox": null,
-      "posicion": 979,
+      "posicion": 980,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22912,7 +22935,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4705,
       "notaFinalAprox": null,
-      "posicion": 980,
+      "posicion": 981,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22935,7 +22958,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.47,
       "notaFinalAprox": null,
-      "posicion": 981,
+      "posicion": 982,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22958,7 +22981,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4687,
       "notaFinalAprox": null,
-      "posicion": 982,
+      "posicion": 983,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -22981,7 +23004,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4654,
       "notaFinalAprox": null,
-      "posicion": 983,
+      "posicion": 984,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23004,7 +23027,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4617,
       "notaFinalAprox": null,
-      "posicion": 984,
+      "posicion": 985,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23027,7 +23050,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4502,
       "notaFinalAprox": null,
-      "posicion": 985,
+      "posicion": 986,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23050,7 +23073,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4483,
       "notaFinalAprox": null,
-      "posicion": 986,
+      "posicion": 987,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23073,7 +23096,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4187,
       "notaFinalAprox": null,
-      "posicion": 987,
+      "posicion": 988,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23096,7 +23119,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4154,
       "notaFinalAprox": null,
-      "posicion": 988,
+      "posicion": 989,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23119,7 +23142,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.415,
       "notaFinalAprox": null,
-      "posicion": 989,
+      "posicion": 990,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23142,7 +23165,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.4068,
       "notaFinalAprox": null,
-      "posicion": 990,
+      "posicion": 991,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23165,7 +23188,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.405,
       "notaFinalAprox": null,
-      "posicion": 991,
+      "posicion": 992,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23188,7 +23211,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.401,
       "notaFinalAprox": null,
-      "posicion": 992,
+      "posicion": 993,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23211,7 +23234,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.3983,
       "notaFinalAprox": null,
-      "posicion": 993,
+      "posicion": 994,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23234,7 +23257,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.3963,
       "notaFinalAprox": null,
-      "posicion": 994,
+      "posicion": 995,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23257,7 +23280,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.3943,
       "notaFinalAprox": null,
-      "posicion": 995,
+      "posicion": 996,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23280,7 +23303,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.388,
       "notaFinalAprox": null,
-      "posicion": 996,
+      "posicion": 997,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23303,7 +23326,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.361,
       "notaFinalAprox": null,
-      "posicion": 997,
+      "posicion": 998,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23326,7 +23349,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.3539,
       "notaFinalAprox": null,
-      "posicion": 998,
+      "posicion": 999,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23349,7 +23372,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.3524,
       "notaFinalAprox": null,
-      "posicion": 999,
+      "posicion": 1000,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23372,7 +23395,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.3429,
       "notaFinalAprox": null,
-      "posicion": 1000,
+      "posicion": 1001,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23395,7 +23418,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.3383,
       "notaFinalAprox": null,
-      "posicion": 1001,
+      "posicion": 1002,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23418,7 +23441,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.3267,
       "notaFinalAprox": null,
-      "posicion": 1002,
+      "posicion": 1003,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23441,7 +23464,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.3221,
       "notaFinalAprox": null,
-      "posicion": 1003,
+      "posicion": 1004,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23464,7 +23487,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.3111,
       "notaFinalAprox": null,
-      "posicion": 1004,
+      "posicion": 1005,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23487,7 +23510,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.3091,
       "notaFinalAprox": null,
-      "posicion": 1005,
+      "posicion": 1006,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23510,7 +23533,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.3077,
       "notaFinalAprox": null,
-      "posicion": 1006,
+      "posicion": 1007,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23533,7 +23556,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.3074,
       "notaFinalAprox": null,
-      "posicion": 1007,
+      "posicion": 1008,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23556,7 +23579,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.3067,
       "notaFinalAprox": null,
-      "posicion": 1008,
+      "posicion": 1009,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23579,7 +23602,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.2984,
       "notaFinalAprox": null,
-      "posicion": 1009,
+      "posicion": 1010,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23602,7 +23625,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.2973,
       "notaFinalAprox": null,
-      "posicion": 1010,
+      "posicion": 1011,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23625,7 +23648,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.2856,
       "notaFinalAprox": null,
-      "posicion": 1011,
+      "posicion": 1012,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23648,7 +23671,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.2827,
       "notaFinalAprox": null,
-      "posicion": 1012,
+      "posicion": 1013,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23671,7 +23694,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.277,
       "notaFinalAprox": null,
-      "posicion": 1013,
+      "posicion": 1014,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23694,7 +23717,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.2707,
       "notaFinalAprox": null,
-      "posicion": 1014,
+      "posicion": 1015,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23717,7 +23740,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.2488,
       "notaFinalAprox": null,
-      "posicion": 1015,
+      "posicion": 1016,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23740,7 +23763,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.2475,
       "notaFinalAprox": null,
-      "posicion": 1016,
+      "posicion": 1017,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23763,7 +23786,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.2305,
       "notaFinalAprox": null,
-      "posicion": 1017,
+      "posicion": 1018,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23786,7 +23809,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.2261,
       "notaFinalAprox": null,
-      "posicion": 1018,
+      "posicion": 1019,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23809,7 +23832,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.214,
       "notaFinalAprox": null,
-      "posicion": 1019,
+      "posicion": 1020,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23832,7 +23855,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.213,
       "notaFinalAprox": null,
-      "posicion": 1020,
+      "posicion": 1021,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23855,7 +23878,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.2058,
       "notaFinalAprox": null,
-      "posicion": 1021,
+      "posicion": 1022,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23878,7 +23901,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.2007,
       "notaFinalAprox": null,
-      "posicion": 1022,
+      "posicion": 1023,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23901,7 +23924,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.199,
       "notaFinalAprox": null,
-      "posicion": 1023,
+      "posicion": 1024,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23924,7 +23947,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.195,
       "notaFinalAprox": null,
-      "posicion": 1024,
+      "posicion": 1025,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23947,7 +23970,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.1928,
       "notaFinalAprox": null,
-      "posicion": 1025,
+      "posicion": 1026,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23970,7 +23993,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.1924,
       "notaFinalAprox": null,
-      "posicion": 1026,
+      "posicion": 1027,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -23993,7 +24016,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.191,
       "notaFinalAprox": null,
-      "posicion": 1027,
+      "posicion": 1028,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24016,7 +24039,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.1869,
       "notaFinalAprox": null,
-      "posicion": 1028,
+      "posicion": 1029,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24039,7 +24062,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.178,
       "notaFinalAprox": null,
-      "posicion": 1029,
+      "posicion": 1030,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24062,7 +24085,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.1695,
       "notaFinalAprox": null,
-      "posicion": 1030,
+      "posicion": 1031,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24085,7 +24108,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.162,
       "notaFinalAprox": null,
-      "posicion": 1031,
+      "posicion": 1032,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24108,7 +24131,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.1521,
       "notaFinalAprox": null,
-      "posicion": 1032,
+      "posicion": 1033,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24131,7 +24154,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.1517,
       "notaFinalAprox": null,
-      "posicion": 1033,
+      "posicion": 1034,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24154,7 +24177,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.1393,
       "notaFinalAprox": null,
-      "posicion": 1034,
+      "posicion": 1035,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24177,7 +24200,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.123,
       "notaFinalAprox": null,
-      "posicion": 1035,
+      "posicion": 1036,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24200,7 +24223,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.12,
       "notaFinalAprox": null,
-      "posicion": 1036,
+      "posicion": 1037,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24223,7 +24246,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.1101,
       "notaFinalAprox": null,
-      "posicion": 1037,
+      "posicion": 1038,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24246,7 +24269,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.103,
       "notaFinalAprox": null,
-      "posicion": 1038,
+      "posicion": 1039,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24269,7 +24292,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.075,
       "notaFinalAprox": null,
-      "posicion": 1039,
+      "posicion": 1040,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24292,7 +24315,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.0617,
       "notaFinalAprox": null,
-      "posicion": 1040,
+      "posicion": 1041,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24315,7 +24338,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.0583,
       "notaFinalAprox": null,
-      "posicion": 1041,
+      "posicion": 1042,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24338,7 +24361,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.0467,
       "notaFinalAprox": null,
-      "posicion": 1042,
+      "posicion": 1043,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24361,7 +24384,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.034,
       "notaFinalAprox": null,
-      "posicion": 1043,
+      "posicion": 1044,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24384,7 +24407,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.0033,
       "notaFinalAprox": null,
-      "posicion": 1044,
+      "posicion": 1045,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24407,7 +24430,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 5.0008,
       "notaFinalAprox": null,
-      "posicion": 1045,
+      "posicion": 1046,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24430,7 +24453,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.9743,
       "notaFinalAprox": null,
-      "posicion": 1046,
+      "posicion": 1047,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24453,7 +24476,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.9683,
       "notaFinalAprox": null,
-      "posicion": 1047,
+      "posicion": 1048,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24476,7 +24499,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.95,
       "notaFinalAprox": null,
-      "posicion": 1048,
+      "posicion": 1049,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24499,7 +24522,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.9467,
       "notaFinalAprox": null,
-      "posicion": 1049,
+      "posicion": 1050,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24522,7 +24545,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.945,
       "notaFinalAprox": null,
-      "posicion": 1050,
+      "posicion": 1051,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24545,7 +24568,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.9423,
       "notaFinalAprox": null,
-      "posicion": 1051,
+      "posicion": 1052,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24568,7 +24591,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.9391,
       "notaFinalAprox": null,
-      "posicion": 1052,
+      "posicion": 1053,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24591,7 +24614,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.9157,
       "notaFinalAprox": null,
-      "posicion": 1053,
+      "posicion": 1054,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24614,7 +24637,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.9089,
       "notaFinalAprox": null,
-      "posicion": 1054,
+      "posicion": 1055,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24637,7 +24660,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.883,
       "notaFinalAprox": null,
-      "posicion": 1055,
+      "posicion": 1056,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24660,7 +24683,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.8808,
       "notaFinalAprox": null,
-      "posicion": 1056,
+      "posicion": 1057,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24683,7 +24706,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.8761,
       "notaFinalAprox": null,
-      "posicion": 1057,
+      "posicion": 1058,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24706,7 +24729,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.8753,
       "notaFinalAprox": null,
-      "posicion": 1058,
+      "posicion": 1059,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24729,7 +24752,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.8557,
       "notaFinalAprox": null,
-      "posicion": 1059,
+      "posicion": 1060,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24752,7 +24775,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.8548,
       "notaFinalAprox": null,
-      "posicion": 1060,
+      "posicion": 1061,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24775,7 +24798,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.844,
       "notaFinalAprox": null,
-      "posicion": 1061,
+      "posicion": 1062,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24798,7 +24821,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.8393,
       "notaFinalAprox": null,
-      "posicion": 1062,
+      "posicion": 1063,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24821,7 +24844,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.8325,
       "notaFinalAprox": null,
-      "posicion": 1063,
+      "posicion": 1064,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24844,7 +24867,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.8323,
       "notaFinalAprox": null,
-      "posicion": 1064,
+      "posicion": 1065,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24867,7 +24890,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 4.8141,
       "notaFinalAprox": null,
-      "posicion": 1065,
+      "posicion": 1066,
       "posicionProvisional": false,
       "plazaObtenida": false
     },
@@ -24889,29 +24912,6 @@
       "notaOposicion": 6.7012,
       "estadoOposicion": "aprobado",
       "notaFinal": 4.8008,
-      "notaFinalAprox": null,
-      "posicion": 1066,
-      "posicionProvisional": false,
-      "plazaObtenida": false
-    },
-    {
-      "id": "05|***4001**|ABELLAN GIL, SANDRA",
-      "tribunal": "05",
-      "turno": "general",
-      "orden": "02350",
-      "nif": "***4001**",
-      "nombre": "ABELLAN GIL, SANDRA",
-      "parteA": 2.845,
-      "parteB": 3.56,
-      "notaFase1": 6.405,
-      "notaFase2": 6.432,
-      "notaConcurso": 1.55,
-      "apartado1": 0.5,
-      "apartado2": 0,
-      "apartado3": 1.05,
-      "notaOposicion": 6.4185,
-      "estadoOposicion": "aprobado",
-      "notaFinal": 4.7957,
       "notaFinalAprox": null,
       "posicion": 1067,
       "posicionProvisional": false,
