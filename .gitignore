@@ -1,0 +1,8 @@
+node_modules/
+dist/
+
+# cache local de PDFs descargados (se regenera con el scraper)
+scraper/raw/
+
+# el frontend consume su copia en web/src/data/, no hace falta el intermedio
+scraper/out/

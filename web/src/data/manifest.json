@@ -1,0 +1,36 @@
+{
+  "especialidades": [
+    {
+      "key": "primaria",
+      "nombre": "Educación Primaria"
+    },
+    {
+      "key": "infantil",
+      "nombre": "Educación Infantil"
+    },
+    {
+      "key": "ingles",
+      "nombre": "Lengua Extranjera: Inglés"
+    },
+    {
+      "key": "frances",
+      "nombre": "Lengua Extranjera: Francés"
+    },
+    {
+      "key": "fisica",
+      "nombre": "Educación Física"
+    },
+    {
+      "key": "musica",
+      "nombre": "Música"
+    },
+    {
+      "key": "pedagogica",
+      "nombre": "Pedagogía Terapéutica"
+    },
+    {
+      "key": "audicion",
+      "nombre": "Audición y Lenguaje"
+    }
+  ]
+}

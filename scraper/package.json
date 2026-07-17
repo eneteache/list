@@ -1,0 +1,14 @@
+{
+  "name": "listado-scraper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "run": "node run.js",
+    "discover": "node discover.js"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^4.0.0",
+    "playwright": "^1.61.1"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "primaria": {
+    "nombre": "Educación Primaria",
+    "codigoEspecialidad": "PRI",
+    "codigoCuerpo": "0597",
+    "cuerpo": "Maestros",
+    "convocatoria": "OPOPRI26",
+    "anyo": 2026,
+    "plazasGeneral": 256,
+    "plazasDiscapacidad": 20
+  },
+  "infantil": {
+    "nombre": "Educación Infantil",
+    "codigoEspecialidad": "EI",
+    "codigoCuerpo": "0597",
+    "cuerpo": "Maestros",
+    "convocatoria": "OPOPRI26",
+    "anyo": 2026,
+    "plazasGeneral": 370,
+    "plazasDiscapacidad": 28
+  },
+  "ingles": {
+    "nombre": "Lengua Extranjera: Inglés",
+    "codigoEspecialidad": "FI",
+    "codigoCuerpo": "0597",
+    "cuerpo": "Maestros",
+    "convocatoria": "OPOPRI26",
+    "anyo": 2026,
+    "plazasGeneral": 186,
+    "plazasDiscapacidad": 14
+  },
+  "frances": {
+    "nombre": "Lengua Extranjera: Francés",
+    "codigoEspecialidad": "FF",
+    "codigoCuerpo": "0597",
+    "cuerpo": "Maestros",
+    "convocatoria": "OPOPRI26",
+    "anyo": 2026,
+    "plazasGeneral": 45,
+    "plazasDiscapacidad": 4
+  },
+  "fisica": {
+    "nombre": "Educación Física",
+    "codigoEspecialidad": "EF",
+    "codigoCuerpo": "0597",
+    "cuerpo": "Maestros",
+    "convocatoria": "OPOPRI26",
+    "anyo": 2026,
+    "plazasGeneral": 123,
+    "plazasDiscapacidad": 9
+  },
+  "musica": {
+    "nombre": "Música",
+    "codigoEspecialidad": "MU",
+    "codigoCuerpo": "0597",
+    "cuerpo": "Maestros",
+    "convocatoria": "OPOPRI26",
+    "anyo": 2026,
+    "plazasGeneral": 74,
+    "plazasDiscapacidad": 6
+  },
+  "pedagogica": {
+    "nombre": "Pedagogía Terapéutica",
+    "codigoEspecialidad": "PT",
+    "codigoCuerpo": "0597",
+    "cuerpo": "Maestros",
+    "convocatoria": "OPOPRI26",
+    "anyo": 2026,
+    "plazasGeneral": 268,
+    "plazasDiscapacidad": 20
+  },
+  "audicion": {
+    "nombre": "Audición y Lenguaje",
+    "codigoEspecialidad": "AL",
+    "codigoCuerpo": "0597",
+    "cuerpo": "Maestros",
+    "convocatoria": "OPOPRI26",
+    "anyo": 2026,
+    "plazasGeneral": 171,
+    "plazasDiscapacidad": 13
+  }
+}
