@@ -1,0 +1,115 @@
+name: Actualizar datos y publicar
+
+on:
+  # Solo recompila y publica lo que ya esté commiteado (no vuelve a scrapear).
+  push:
+    branches: [main]
+    paths:
+      - 'web/**'
+      - '.github/workflows/publish.yml'
+  # Descarga/unifica/rebarema todo de cero contra educarm.es y, si hay
+  # cambios, los commitea antes de compilar y publicar — todo en el mismo
+  # run, sin depender de que ese commit dispare otro workflow (un push hecho
+  # con el GITHUB_TOKEN por defecto no dispara otros workflows).
+  schedule:
+    # Cada 4h (sintaxis cron habitual) — cambia esta línea para ajustar la
+    # frecuencia.
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependencias del scraper
+        if: github.event_name != 'push'
+        working-directory: scraper
+        run: npm ci
+
+      - name: Instalar navegador de Playwright
+        if: github.event_name != 'push'
+        working-directory: scraper
+        run: npx playwright install --with-deps chromium
+
+      # scraper/raw/ es el cache local de PDFs ya descargados (gitignored,
+      # nunca vive en el repo): sin esto, cada ejecución en un runner nuevo
+      # descargaría TODO de cero en vez de solo lo que haya cambiado desde la
+      # última vez (ver el timestamp en la URL, download.js). La key incluye
+      # el run_id para que siempre se guarde una copia nueva al final; el
+      # restore-keys recupera la más reciente que haya con ese prefijo al
+      # empezar. El PDF de la lista de interinos (sin timestamp en su URL,
+      # ver interinos.js) también cae dentro de esta carpeta, así que solo se
+      # descarga de verdad la primera vez — si la CARM publica una lista
+      # nueva, sigue haciendo falta borrar esa entrada de cache a mano (o
+      # actualizar la URL) para forzar una descarga nueva, automatizar esto
+      # no cambia esa limitación.
+      - name: Restaurar cache de PDFs descargados
+        if: github.event_name != 'push'
+        uses: actions/cache@v4
+        with:
+          path: scraper/raw
+          key: scraper-raw-${{ github.run_id }}
+          restore-keys: |
+            scraper-raw-
+
+      - name: Descargar y unificar todas las especialidades
+        if: github.event_name != 'push'
+        working-directory: scraper
+        run: node run.js --all
+
+      - name: Rebaremar la lista de interinos
+        if: github.event_name != 'push'
+        working-directory: scraper
+        run: node interinos.js
+
+      - name: Commitear datos nuevos si los hay
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add web/src/data
+          if git diff --cached --quiet; then
+            echo "Sin cambios en los datos."
+          else
+            git commit -m "Actualizar datos de la oposición ($(date -u +%Y-%m-%d))"
+            git push
+          fi
+
+      - name: Instalar dependencias del frontend
+        working-directory: web
+        run: npm ci
+
+      - name: Compilar
+        working-directory: web
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

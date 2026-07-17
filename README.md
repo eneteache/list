@@ -6,7 +6,7 @@ Web no oficial que unifica, para las 8 especialidades convocadas del cuerpo de M
 
 - `scraper/` — pipeline en Node que descubre, descarga y parsea los PDFs publicados por educarm y genera un JSON unificado por especialidad.
 - `web/` — frontend estático (Vite + React) que consume esos JSON: tabla con búsqueda/orden y una vista de estadísticas.
-- `.github/workflows/refresh.yml` — Action programada que reejecuta el pipeline cada 4h y commitea los datos si han cambiado.
+- `.github/workflows/publish.yml` — Action programada (cada 4h) que reejecuta el pipeline completo (scraper + rebaremación de interinos), commitea los datos si han cambiado, y publica `web/` en GitHub Pages; también se dispara con cada push a `main` que toque `web/` (sin volver a scrapear) y manualmente desde la pestaña Actions ("Run workflow").
 
 ## Uso local
 
@@ -52,8 +52,8 @@ Turno general (ingreso libre) y turno de reserva para personas con discapacidad 
 
 ## Desplegar
 
-- **Vercel**: crear un proyecto nuevo apuntando a este repo con **Root Directory = `web`** (Vercel detecta Vite automáticamente). Cada push a la rama principal —incluidos los commits automáticos de la Action de refresco— dispara un redeploy.
-- **GitHub Action**: `.github/workflows/refresh.yml` necesita que el repo esté en GitHub con Actions habilitado; no requiere secretos adicionales (usa el `GITHUB_TOKEN` por defecto para commitear).
+- **GitHub Pages** (como está configurado ahora mismo): repo público, Settings → Pages → Source = "GitHub Actions". `.github/workflows/publish.yml` hace todo solo — no requiere secretos adicionales (usa el `GITHUB_TOKEN` por defecto tanto para commitear los datos como para publicar) y no depende de que tu ordenador esté encendido.
+- **Vercel/Netlify/Cloudflare Pages** (alternativa): crear un proyecto nuevo apuntando a este repo con **Root Directory = `web`** (detectan Vite automáticamente). Cada push a la rama principal —incluidos los commits automáticos de `publish.yml`— dispara un redeploy; en ese caso puedes quitar los jobs `deploy`/`configure-pages`/`upload-pages-artifact` de `publish.yml`, ya no harían falta.
 
 ## Limitaciones conocidas
 
