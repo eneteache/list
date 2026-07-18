@@ -51,6 +51,15 @@ body {
   padding: 24px 20px 64px;
 }
 
+@media (max-width: 600px) {
+  .app {
+    padding: 16px 10px 40px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+}
+
 .app-header-top {
   display: flex;
   justify-content: space-between;
@@ -219,6 +228,9 @@ main {
   max-height: 70vh;
   border: 1px solid var(--color-border);
   border-radius: 8px;
+  /* Scroll con inercia en iOS Safari antiguo (por defecto ahí el scroll de un
+     contenedor con overflow es "a trompicones", no suave, sin esto). */
+  -webkit-overflow-scrolling: touch;
 }
 
 .tabla-datos {
@@ -248,6 +260,29 @@ main {
   background: var(--color-bg-subtle);
   cursor: pointer;
   user-select: none;
+}
+
+/* Primera columna fijada al hacer scroll horizontal (tablas con muchas más
+   columnas que ancho de pantalla en móvil, ver COLUMN_WIDTHS en Tabla.tsx e
+   Interinos.tsx): sin esto, al desplazarte a la derecha para ver Nota
+   final/Estado se pierde de vista a qué fila corresponde. z-index más alto
+   en la celda de cabecera para que quede por encima tanto de las demás
+   cabeceras (sticky top) como de las celdas fijadas del cuerpo. */
+.tabla-datos th:first-child,
+.tabla-datos td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--color-bg);
+}
+
+.tabla-datos thead th:first-child {
+  z-index: 2;
+  background: var(--color-bg-subtle);
+}
+
+.tabla-datos tbody tr:hover td:first-child {
+  background: var(--color-bg-subtle);
 }
 
 .tabla-datos tbody tr:hover {

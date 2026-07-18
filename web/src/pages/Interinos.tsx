@@ -34,6 +34,23 @@ const SIGLAS: Record<string, string> = {
   '039': 'FA',
 };
 
+// Anchos fijos por columna (table-layout: fixed, ver .tabla-datos): sin esto
+// el navegador reparte el ancho a partes iguales entre todas las columnas (9
+// aquí) en vez de a partir del contenido, y en una pantalla estrecha eso deja
+// cada columna reducida a 2-3 caracteres — inutilizable en móvil. Mismo
+// mecanismo que COLUMN_WIDTHS en Tabla.tsx.
+const COLUMN_WIDTHS: Record<string, number> = {
+  posicion: 56,
+  nombre: 220,
+  nif: 100,
+  especialidades: 140,
+  notaOposicion: 120,
+  experienciaDocente: 130,
+  ptosOposSuperadas: 130,
+  puntuacionTotal: 120,
+  estado: 200,
+};
+
 function numberColumn(id: string, header: string, get: (row: Interino) => number) {
   return columnHelper.accessor(get, {
     id,
@@ -234,6 +251,11 @@ export function Interinos({ dataset }: { dataset: ListaInterinosDataset }) {
 
       <div className="table-scroll" ref={scrollRef}>
         <table className="tabla-datos">
+          <colgroup>
+            {table.getAllLeafColumns().map((column) => (
+              <col key={column.id} style={{ width: COLUMN_WIDTHS[column.id] ?? 100 }} />
+            ))}
+          </colgroup>
           <thead>
             {table.getHeaderGroups().map((hg) => (
               <tr key={hg.id}>
