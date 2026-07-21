@@ -12,7 +12,7 @@
     "notaCorte": 5.7838,
     "notaCorteProvisional": false
   },
-  "generadoEn": "2026-07-21T10:24:50.936Z",
+  "generadoEn": "2026-07-21T13:42:36.675Z",
   "tribunales": [
     {
       "tribunal": "01",
@@ -275,6 +275,29 @@
       "plazaObtenida": true
     },
     {
+      "id": "10|***0381**|MOLINA CAÑETE, SERGIO",
+      "tribunal": "10",
+      "turno": "general",
+      "orden": "07680",
+      "nif": "***0381**",
+      "nombre": "MOLINA CAÑETE, SERGIO",
+      "parteA": 5,
+      "parteB": 5,
+      "notaFase1": 10,
+      "notaFase2": 9.83,
+      "notaConcurso": 9,
+      "apartado1": 5,
+      "apartado2": 2,
+      "apartado3": 2,
+      "notaOposicion": 9.915,
+      "estadoOposicion": "aprobado",
+      "notaFinal": 9.61,
+      "notaFinalAprox": null,
+      "posicion": 7,
+      "posicionProvisional": false,
+      "plazaObtenida": true
+    },
+    {
       "id": "14|***2415**|SALMERON RAMOS, MIGUEL ANGEL",
       "tribunal": "14",
       "turno": "general",
@@ -293,7 +316,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 9.5967,
       "notaFinalAprox": null,
-      "posicion": 7,
+      "posicion": 8,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -316,7 +339,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 9.516,
       "notaFinalAprox": null,
-      "posicion": 8,
+      "posicion": 9,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -339,7 +362,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 9.5132,
       "notaFinalAprox": null,
-      "posicion": 9,
+      "posicion": 10,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -362,7 +385,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 9.5067,
       "notaFinalAprox": null,
-      "posicion": 10,
+      "posicion": 11,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -385,7 +408,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 9.435,
       "notaFinalAprox": null,
-      "posicion": 11,
+      "posicion": 12,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -408,7 +431,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 9.4341,
       "notaFinalAprox": null,
-      "posicion": 12,
+      "posicion": 13,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -431,7 +454,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 9.3631,
       "notaFinalAprox": null,
-      "posicion": 13,
+      "posicion": 14,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -454,7 +477,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 9.3432,
       "notaFinalAprox": null,
-      "posicion": 14,
+      "posicion": 15,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -477,7 +500,7 @@
       "estadoOposicion": "aprobado",
       "notaFinal": 9.2967,
       "notaFinalAprox": null,
-      "posicion": 15,
+      "posicion": 16,
       "posicionProvisional": false,
       "plazaObtenida": true
     },
@@ -499,29 +522,6 @@
       "notaOposicion": 9.19,
       "estadoOposicion": "aprobado",
       "notaFinal": 9.2933,
-      "notaFinalAprox": null,
-      "posicion": 16,
-      "posicionProvisional": false,
-      "plazaObtenida": true
-    },
-    {
-      "id": "10|***0381**|MOLINA CAÑETE, SERGIO",
-      "tribunal": "10",
-      "turno": "general",
-      "orden": "07680",
-      "nif": "***0381**",
-      "nombre": "MOLINA CAÑETE, SERGIO",
-      "parteA": 5,
-      "parteB": 5,
-      "notaFase1": 10,
-      "notaFase2": 9.83,
-      "notaConcurso": 8,
-      "apartado1": 5,
-      "apartado2": 1,
-      "apartado3": 2,
-      "notaOposicion": 9.915,
-      "estadoOposicion": "aprobado",
-      "notaFinal": 9.2767,
       "notaFinalAprox": null,
       "posicion": 17,
       "posicionProvisional": false,
