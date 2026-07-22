@@ -29,7 +29,7 @@ export async function extractLines(pdfPath) {
     const page = await doc.getPage(p);
     const content = await page.getTextContent();
     const items = content.items
-      .map((it) => ({ str: it.str, x: it.transform[4], y: it.transform[5] }))
+      .map((it) => ({ str: it.str, x: it.transform[4], y: it.transform[5], width: it.width }))
       .filter((it) => it.str.trim() !== '');
 
     const pageLines = [];
@@ -124,6 +124,43 @@ export function parseDataRow(line) {
     orden,
     decimals,
   };
+}
+
+/**
+ * Extrae todos los valores decimales de una línea con su X, incluso cuando el
+ * generador del PDF ha impreso varios pegados en un único item de texto (p.ej.
+ * "0,0000 0,9500 0,0000 9,4832" como una sola cadena con un único x) en vez de
+ * un item por número — visto en el Anexo I/II de la Resolución provisional de
+ * interinos (scraper/interinosOficial.js), a diferencia del resto de
+ * documentos de este scraper donde cada número siempre es su propio item. Para
+ * esos casos se reparte la X proporcionalmente al offset de caracteres dentro
+ * de la cadena usando el `width` total del item (ambos en la misma escala de
+ * puntos PDF) — aproximado, pero suficiente para luego emparejar por cercanía
+ * con closestDecimal (maxDist=30) sin confundir la columna vecina.
+ */
+export function extractDecimals(items) {
+  const decimals = [];
+  for (const it of items) {
+    const trimmed = it.str.trim();
+    if (DECIMAL_RE.test(trimmed)) {
+      decimals.push({ value: parseFloat(trimmed.replace(',', '.')), x: it.x });
+      continue;
+    }
+    if (!it.str.includes(',') || !/\s/.test(it.str)) continue;
+    const len = it.str.length;
+    const width = it.width || 0;
+    let searchFrom = 0;
+    for (const part of it.str.split(/\s+/)) {
+      if (part === '') continue;
+      const idx = it.str.indexOf(part, searchFrom);
+      searchFrom = idx + part.length;
+      if (DECIMAL_RE.test(part)) {
+        const x = width > 0 ? it.x + (idx / len) * width : it.x;
+        decimals.push({ value: parseFloat(part.replace(',', '.')), x });
+      }
+    }
+  }
+  return decimals;
 }
 
 /** Encuentra en una línea de cabecera la X del token cuyo texto coincide con `label`. */

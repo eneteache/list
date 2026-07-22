@@ -11,28 +11,12 @@ import {
 import type { Interino, ListaInterinosDataset } from '../lib/types';
 import { useDebouncedValue } from '../lib/useDebouncedValue';
 import { useRowVirtualizer } from '../lib/useRowVirtualizer';
+import { SIGLAS } from '../lib/siglas';
 
 const numFmt = new Intl.NumberFormat('es-ES', { minimumFractionDigits: 4, maximumFractionDigits: 4 });
 const fmt = (n: number | null | undefined) => (n == null ? '—' : numFmt.format(n));
 
 const columnHelper = createColumnHelper<Interino>();
-
-// Mismas siglas que usa el propio formulario de educarm para cada
-// especialidad (ver codigoEspecialidad en scraper/config/especialidades.json)
-// — más compactas que el nombre completo, que desbordaba la columna. "039"
-// (Alemán) no está en esa convocatoria, así que no tiene sigla oficial
-// conocida; se sigue el patrón F+inicial que usan FI (inglés) y FF (francés).
-const SIGLAS: Record<string, string> = {
-  '031': 'EI',
-  '032': 'FI',
-  '033': 'FF',
-  '034': 'EF',
-  '035': 'MU',
-  '036': 'PT',
-  '037': 'AL',
-  '038': 'PRI',
-  '039': 'FA',
-};
 
 // Anchos fijos por columna (table-layout: fixed, ver .tabla-datos): sin esto
 // el navegador reparte el ancho a partes iguales entre todas las columnas (9
@@ -143,7 +127,7 @@ function columnas(especialidades: Record<string, string>) {
         const i = info.row.original;
         if (i.excluidoPorPlaza) {
           return (
-            <span className="badge badge-plaza" title="Ya tiene plaza (real o provisional) en alguna especialidad de la oposición 2026, no cuenta en el orden de la bolsa">
+            <span className="badge badge-plaza" title="Ya tiene plaza definitiva (nota final real, concurso y oposición resueltos) en alguna especialidad de la oposición 2026, no cuenta en el orden de la bolsa">
               Plaza en oposición (excluido)
             </span>
           );
@@ -214,7 +198,8 @@ export function Interinos({ dataset }: { dataset: ListaInterinosDataset }) {
         tope 6); <strong>Bloque II</strong> (nunca la ha superado) suma la nota de la última oposición (2026, aunque
         sea un suspenso) + experiencia docente. Todo Bloque I se ordena antes que cualquier Bloque II con
         independencia de la puntuación de cada uno — no es un único ranking numérico mezclado. Se excluye de la
-        bolsa a quien ya tiene plaza —real o provisional— en cualquier especialidad de la oposición 2026, y a quien
+        bolsa a quien ya tiene plaza definitiva (nota final real, concurso y oposición resueltos — una estimación
+        provisional dentro del nº de plazas no cuenta) en cualquier especialidad de la oposición 2026, y a quien
         estando en Bloque II no se ha presentado efectivamente a la Parte A de la primera prueba 2026 en ninguna
         especialidad acreditada (ambos se listan igualmente, marcados como excluidos). La nota de este año es
         siempre la de la fase de oposición (nunca el concurso, que ya cuenta aparte vía experiencia docente y puntos

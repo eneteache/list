@@ -6,7 +6,7 @@ Web no oficial que unifica, para las 8 especialidades convocadas del cuerpo de M
 
 - `scraper/` — pipeline en Node que descubre, descarga y parsea los PDFs publicados por educarm y genera un JSON unificado por especialidad.
 - `web/` — frontend estático (Vite + React) que consume esos JSON: tabla con búsqueda/orden y una vista de estadísticas.
-- `.github/workflows/publish.yml` — Action programada (cada 4h) que reejecuta el pipeline completo (scraper + rebaremación de interinos), commitea los datos si han cambiado, y publica `web/` en GitHub Pages; también se dispara con cada push a `main` que toque `web/` (sin volver a scrapear) y manualmente desde la pestaña Actions ("Run workflow").
+- `.github/workflows/publish.yml` — Action programada (cada 4h) que reejecuta el pipeline completo (scraper + rebaremación de interinos + cruce con la lista oficial de interinos), commitea los datos si han cambiado, y publica `web/` en GitHub Pages; también se dispara con cada push a `main` que toque `web/` (sin volver a scrapear) y manualmente desde la pestaña Actions ("Run workflow").
 
 ## Uso local
 
@@ -38,13 +38,26 @@ Por cada aspirante se calcula su **puntuación de bolsa ya rebaremada con los re
 - **Bloque I** (ya tiene, esta convocatoria incluida, alguna oposición superada desde el año 2000 en la especialidad): nota más alta de esas oposiciones superadas + experiencia docente (topada a 10 puntos según el Acuerdo de Personal Docente Interino) + puntos por nº de oposiciones superadas (1/1,5/1,5/2, tope 6 — sube un escalón si aprueba también este año).
 - **Bloque II** (nunca la ha superado): nota de la última oposición (la del año en curso, aunque sea un suspenso) + experiencia docente.
 
-Se excluye de la bolsa (se listan igual, marcados) a quien **ya obtiene plaza** —real o provisional— en **cualquier** especialidad de la oposición del año en curso, y a quien estando en Bloque II **no se ha presentado efectivamente a la Parte A de la primera prueba** de este año en ninguna especialidad acreditada (requisito de permanencia si no se está ya en Bloque I).
+Se excluye de la bolsa (se listan igual, marcados) a quien **ya obtiene plaza definitiva** —nota final real, con concurso y oposición ya resueltos; ir dentro del nº de plazas con una nota todavía provisional no cuenta, puede cambiar o quedar sin cubrir— en **cualquier** especialidad de la oposición del año en curso, y a quien estando en Bloque II **no se ha presentado efectivamente a la Parte A de la primera prueba** de este año en ninguna especialidad acreditada (requisito de permanencia si no se está ya en Bloque I).
 
 La nota que aporta la convocatoria del año en curso es **siempre la de la fase de oposición, nunca el concurso** (que ya cuenta aparte en la bolsa vía experiencia docente y puntos por oposiciones superadas — sumarlo también en la nota lo contaría dos veces): en cuanto un tribunal resuelve la fase de oposición para una persona (aprobados o suspensos definitivos) esa nota ya es cerrada, sin esperar a que se publique la baremación del concurso; hasta entonces se usa una aproximación provisional a partir de fase 1 y/o fase 2 sueltas, que se corrige sola en cuanto el tribunal publique más datos y se regenere este listado.
 
 Esta puntuación sigue siendo aproximada, no el orden oficial: el Anexo I no indica a qué especialidad concreta corresponde cada calificación histórica cuando alguien está acreditado en varias, así que la nota más alta / bloque se calculan igual para todas sus especialidades acreditadas; y "ya tiene oposición superada desde 2000" se aproxima con las calificaciones que trae el propio Anexo I, no con el registro administrativo del Bloque I vigente (que este scraper no tiene forma de consultar).
 
 A diferencia de los documentos por tribunal, el Anexo I es un enlace de descarga suelto sin mecanismo de descubrimiento automático: la URL vive en `scraper/config/interinos.json` (se cachea una sola vez en `raw/interinos/anexo.pdf`) y hay que actualizarla a mano cuando la CARM republique la lista, borrando el PDF cacheado para forzar una descarga nueva.
+
+## Lista de interinos (oficial)
+
+Una vez la CARM publica la Resolución que fija la lista **provisional oficial** de interinos para el curso siguiente (Anexo I = Bloque I, Anexo II = Bloque II, ya con la puntuación calculada por la propia Administración — a diferencia del Anexo I de más arriba, que es un documento previo de la fase de exposición pública sin puntuación cerrada), `scraper/interinos-oficial.js` genera un **segundo listado independiente** a partir de ese documento, sin recalcular nada:
+
+```bash
+cd scraper
+node interinos-oficial.js   # necesita out/<especialidad>.json ya generado (node run.js --all), para cruzar contra la oposición del año en curso
+```
+
+Reduce el Anexo I/II (varios miles de aspirantes en las 9 especialidades del cuerpo) a quien además es **opositor de la convocatoria en curso** (cruzado por NIF enmascarado + nombre, igual que la rebaremación de más arriba) y **todavía no tiene plaza definitiva** en ninguna especialidad —nota final real, con concurso y oposición ya resueltos; ir dentro del nº de plazas con una nota todavía provisional no cuenta, un turno puede quedar con menos aprobados definitivos que plazas— a quien ya la tiene se le quita del listado por completo, no se marca. Cada aspirante mostrado lleva, además de sus datos oficiales de bolsa (bloque, puesto real dentro de su bloque, nota, experiencia docente, puntuación total), la especialidad concreta por la que ha optado este año (por la que se ha presentado a examen, columna "Esp. opta") y su estado en ella — no siempre coincide con sus especialidades acreditadas en la bolsa; si se presenta a más de una especialidad el mismo año (infrecuente) se toma la de código más bajo como principal. En la web, el filtro por especialidad usa esta columna (no las especialidades acreditadas), y un botón junto al buscador ("Eliminar los que optan por plaza") permite esconder además a quien, con la nota que se conoce hasta ahora —real o todavía provisional, a diferencia de la exclusión definitiva de más arriba—, va dentro del nº de plazas de esa especialidad (campo `plazaOpta`), renumerando el "#" del subconjunto que quede visible en cada momento — el puesto real en la Resolución (con huecos) se conserva en el tooltip de esa columna.
+
+Igual que el Anexo I de la fase de exposición pública, la URL de esta Resolución vive suelta en `scraper/config/interinos-oficial.json` (se cachea en `raw/interinos-oficial/resolucion.pdf`) y hay que actualizarla a mano — borrando el PDF cacheado para forzar una descarga nueva — cuando la CARM publique una versión nueva (tras resolver alegaciones, o la lista definitiva).
 
 ## Nº de plazas y turnos
 
@@ -63,3 +76,5 @@ Turno general (ingreso libre) y turno de reserva para personas con discapacidad 
 - Herramienta no oficial: no sustituye la publicación oficial de los tribunales.
 - La rebaremación de la lista de interinos (exclusión por plaza, Bloque I/II, exclusión por no presentarse) cruza por NIF enmascarado + nombre (tolerando acentos/ñ y la abreviatura "Mª", que varían entre el Anexo I y los documentos por tribunal); un apodo distinto de pila (p. ej. "Mari Carmen" en vez de "María del Carmen") puede no detectarse y dejar a esa persona sin actualizar/excluir.
 - La puntuación de la lista de interinos es informativa, no el orden oficial de la bolsa (ver sección "Lista de interinos" más arriba): a quien está acreditado en varias especialidades se le aplica la misma nota histórica y el mismo bloque en todas, y "Bloque I" se aproxima con las calificaciones del Anexo I, no con el registro administrativo del Bloque I vigente.
+- La lista de interinos oficial (ver sección homónima) sí trae la puntuación tal cual la publica la CARM, pero el cruce con los opositores 2026 (y por tanto la columna "Esp. opta" y la exclusión por plaza confirmada) usa el mismo cruce por NIF enmascarado + nombre que el resto del proyecto, con la misma limitación: un apodo de pila distinto entre documentos puede dejar a alguien sin detectar como opositor, y esa persona no aparecería en absoluto en este listado (o, si ya tuviera plaza, no se excluiría).
+- El campo `generadoEn` de cada dataset solo se actualiza cuando el contenido cambia de verdad respecto a la última vez (ver `scraper/lib/generadoEn.js`): si el pipeline se reejecuta (p.ej. la Action programada cada 4h) sin datos nuevos que scrapear, la fecha que se ve en la web sigue siendo la de la última actualización real, no la de la última ejecución.

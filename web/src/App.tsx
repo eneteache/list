@@ -2,11 +2,13 @@ import { useEffect, useState } from 'react';
 import { Tabla } from './pages/Tabla';
 import { Estadisticas } from './pages/Estadisticas';
 import { Interinos } from './pages/Interinos';
+import { InterinosOficial } from './pages/InterinosOficial';
 import { useDataset, useManifest } from './lib/useDataset';
 import { useInterinos } from './lib/useInterinos';
+import { useInterinosOficial } from './lib/useInterinosOficial';
 import type { CorteTurno, EspecialidadDataset, TribunalInfo, Turno } from './lib/types';
 
-type Vista = 'tabla' | 'estadisticas' | 'interinos';
+type Vista = 'tabla' | 'estadisticas' | 'interinos' | 'interinos-oficial';
 
 const fechaFmt = new Intl.DateTimeFormat('es-ES', { dateStyle: 'long', timeStyle: 'short' });
 const numFmt = new Intl.NumberFormat('es-ES', { minimumFractionDigits: 4, maximumFractionDigits: 4 });
@@ -116,11 +118,16 @@ function App() {
   }, [manifest, especialidad]);
 
   const { dataset, loading, error } = useDataset(especialidad);
-  // La lista de interinos es un dataset único e independiente (el Anexo I
-  // cubre las 9 especialidades del cuerpo a la vez): no sigue al selector de
+  // Las dos listas de interinos son datasets únicos e independientes (cubren
+  // las especialidades del cuerpo a la vez): no siguen al selector de
   // especialidad de arriba, que es solo para la tabla/estadísticas de la
-  // oposición. El filtro por especialidad vive dentro de Interinos.tsx.
+  // oposición. El filtro por especialidad vive dentro de cada tabla.
   const interinosResult = useInterinos();
+  const interinosOficialResult = useInterinosOficial();
+  // El selector de turno y el de "con estimaciones/solo oficial" solo tienen
+  // sentido para la tabla/estadísticas de la oposición por especialidad —
+  // ninguna de las dos listas de interinos usa esos conceptos.
+  const esVistaOposicion = vista === 'tabla' || vista === 'estadisticas';
 
   return (
     <div className="app">
@@ -141,7 +148,7 @@ function App() {
                 ))}
               </select>
             )}
-            {vista !== 'interinos' && (
+            {esVistaOposicion && (
               <div className="segmented" role="group" aria-label="Turno">
                 <button
                   className={turno === 'general' ? 'segmented-active' : ''}
@@ -157,7 +164,7 @@ function App() {
                 </button>
               </div>
             )}
-            {vista !== 'interinos' && (
+            {esVistaOposicion && (
               <div className="segmented" role="group" aria-label="Datos a mostrar">
                 <button className={!soloOficial ? 'segmented-active' : ''} onClick={() => setSoloOficial(false)}>
                   Con estimaciones
@@ -188,6 +195,12 @@ function App() {
         <button className={vista === 'interinos' ? 'tab-active' : ''} onClick={() => setVista('interinos')}>
           Lista de interinos
         </button>
+        <button
+          className={vista === 'interinos-oficial' ? 'tab-active' : ''}
+          onClick={() => setVista('interinos-oficial')}
+        >
+          Lista de interinos (oficial)
+        </button>
       </nav>
 
       {vista === 'interinos' ? (
@@ -204,6 +217,27 @@ function App() {
               </div>
               <main>
                 <Interinos dataset={interinosResult.dataset} />
+              </main>
+            </>
+          )}
+        </>
+      ) : vista === 'interinos-oficial' ? (
+        <>
+          {interinosOficialResult.loading && <p className="status-msg">Cargando datos…</p>}
+          {interinosOficialResult.error && <p className="status-msg status-error">{interinosOficialResult.error}</p>}
+          {interinosOficialResult.dataset && (
+            <>
+              <div className="dataset-meta">
+                <span>
+                  <strong>Cuerpo de Maestros</strong> · Todas las especialidades
+                </span>
+                <span>
+                  Resolución publicada: {interinosOficialResult.dataset.publicadoEn} · Datos generados:{' '}
+                  {fechaFmt.format(new Date(interinosOficialResult.dataset.generadoEn))}
+                </span>
+              </div>
+              <main>
+                <InterinosOficial dataset={interinosOficialResult.dataset} />
               </main>
             </>
           )}

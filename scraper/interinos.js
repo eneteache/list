@@ -3,6 +3,7 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { parseListaInterinos } from './parse.js';
 import { groupByNif, nombresCompatibles } from './lib/personas.js';
+import { conGeneradoEnEstable } from './lib/generadoEn.js';
 
 // Tope oficial de experiencia docente (Resolución de 3 de junio de 2021,
 // Acuerdo de Personal Docente Interino): máximo 10 puntos, independientemente
@@ -87,10 +88,15 @@ function mejorNotaOposicion(matches) {
  *    que quien ya tiene plaza (excluidoPorPlaza) — ninguno de los dos cuenta
  *    en el orden de la bolsa, pero ambos se listan para que quede claro por
  *    qué no aparecen con posición.
- *  - Exclusión GLOBAL por plaza: cualquier plaza obtenida este año, en
- *    cualquiera de las especialidades convocadas, saca a esa persona de la
- *    bolsa por completo, con independencia de en qué especialidad la haya
- *    obtenido.
+ *  - Exclusión GLOBAL por plaza: cualquier plaza DEFINITIVA obtenida este año
+ *    (notaFinal real, concurso y oposición ya resueltos — no una estimación
+ *    provisional a partir de notaFinalAprox), en cualquiera de las
+ *    especialidades convocadas, saca a esa persona de la bolsa por completo,
+ *    con independencia de en qué especialidad la haya obtenido. No todas las
+ *    plazas convocadas tienen por qué cubrirse (un turno puede quedar con
+ *    menos aprobados definitivos que plazas), así que "va dentro del nº de
+ *    plazas" con una nota todavía provisional no basta para darla por
+ *    obtenida.
  *  - Bloque I y Bloque II son colas independientes de la bolsa: TODO Bloque I
  *    se llama antes que CUALQUIER Bloque II con independencia de la
  *    puntuación de cada uno — no es un único ranking numérico mezclado.
@@ -175,7 +181,15 @@ export async function runInterinos(config) {
     const candidatosNif = candidatos2026PorNif.get(interino.nif) ?? [];
     const matches = candidatosNif.filter((c) => nombresCompatibles(c.nombre, interino.nombre));
 
-    interino.excluidoPorPlaza = matches.some((c) => c.plazaObtenida === true);
+    // Solo cuenta como plaza obtenida la que ya es definitiva: notaFinal real
+    // (concurso Y oposición resueltos, ver unify.js), no una estimación
+    // provisional (posicionProvisional true, notaFinalAprox) — un "pendiente"
+    // puede figurar dentro del nº de plazas con la nota que lleva hasta ahora
+    // y acabar sin plaza en cuanto su tribunal resuelva. Tampoco todas las
+    // plazas convocadas tienen por qué cubrirse (turno general o de
+    // discapacidad pueden quedar con menos aprobados definitivos que plazas),
+    // así que no basta con "va dentro del nº de plazas" sin más.
+    interino.excluidoPorPlaza = matches.some((c) => c.plazaObtenida === true && c.posicionProvisional === false);
 
     // "Ha superado la oposición" es haber aprobado la fase de oposición (con
     // independencia de si su tribunal ya ha publicado la baremación): esa
@@ -250,7 +264,8 @@ export async function runInterinos(config) {
 
   fs.mkdirSync('out', { recursive: true });
   const outPath = path.join('out', 'interinos.json');
-  fs.writeFileSync(outPath, JSON.stringify(output, null, 2));
+  const outputEstable = conGeneradoEnEstable(outPath, output);
+  fs.writeFileSync(outPath, JSON.stringify(outputEstable, null, 2));
 
   const excluidosPorPlaza = excluidos.filter((i) => i.excluidoPorPlaza).length;
   const excluidosPorNoPresentarse = excluidos.filter((i) => i.excluidoPorNoPresentarse).length;
@@ -258,7 +273,7 @@ export async function runInterinos(config) {
     `[interinos] ${bloqueI.length} en Bloque I, ${bloqueII.length} en Bloque II, ${excluidosPorPlaza} excluidos por tener ya plaza, ${excluidosPorNoPresentarse} excluidos por no presentarse a la Parte A sin Bloque I. Escrito en ${outPath}`
   );
 
-  return output;
+  return outputEstable;
 }
 
 // CLI: node interinos.js

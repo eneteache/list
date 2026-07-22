@@ -3,6 +3,7 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { parseBaremacion, parseFaseOposicion, parsePrimeraPrueba, parseSegundaPrueba } from './parse.js';
 import { groupByNif, agruparPorPersona, pickMatch } from './lib/personas.js';
+import { conGeneradoEnEstable } from './lib/generadoEn.js';
 
 const PESO_CONCURSO = 1 / 3;
 const PESO_OPOSICION = 2 / 3;
@@ -306,8 +307,9 @@ export async function unify(especialidadKey, config) {
   };
 
   const outPath = path.join('out', `${especialidadKey}.json`);
+  const outputEstable = conGeneradoEnEstable(outPath, output);
   fs.mkdirSync('out', { recursive: true });
-  fs.writeFileSync(outPath, JSON.stringify(output, null, 2));
+  fs.writeFileSync(outPath, JSON.stringify(outputEstable, null, 2));
 
   const todosEnCarrera = [...general.candidatos, ...discapacidad.candidatos].filter(enCarrera);
   const conNotaReal = todosEnCarrera.filter((c) => c.notaFinal != null).length;
@@ -322,7 +324,7 @@ export async function unify(especialidadKey, config) {
     );
   }
 
-  return output;
+  return outputEstable;
 }
 
 // CLI: node unify.js <especialidad>

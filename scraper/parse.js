@@ -1,4 +1,4 @@
-import { extractLines, lineText, parseDataRow, headerX, closestDecimal, NIF_RE, DECIMAL_RE } from './lib/pdf.js';
+import { extractLines, lineText, parseDataRow, headerX, closestDecimal, extractDecimals, NIF_RE, DECIMAL_RE } from './lib/pdf.js';
 
 /**
  * Detecta de qué tipo de documento se trata a partir del título impreso en el PDF.
@@ -263,4 +263,156 @@ export async function parseListaInterinos(pdfPath) {
   if (actual) candidatos.push(actual);
 
   return { candidatos: candidatos.filter((c) => c.especialidades.length > 0) };
+}
+
+/**
+ * Quita de `decimals` (mutándolo) el valor cuya X está más cerca de `targetX`
+ * y lo devuelve, o null si no hay ninguno a menos de `maxDist`. A diferencia
+ * de closestDecimal (que solo consulta), aquí hace falta ir descartando cada
+ * valor ya asignado a una columna para poder averiguar, por eliminación, a
+ * qué columna corresponden los que quedan sin cabecera propia (ver
+ * parseListaInterinosOficial).
+ */
+function pickClosest(decimals, targetX, maxDist = 30) {
+  if (targetX == null || decimals.length === 0) return null;
+  let bestIdx = -1;
+  let bestDist = Infinity;
+  decimals.forEach((d, i) => {
+    const dist = Math.abs(d.x - targetX);
+    if (dist < bestDist) {
+      bestDist = dist;
+      bestIdx = i;
+    }
+  });
+  if (bestIdx === -1 || bestDist > maxDist) return null;
+  return decimals.splice(bestIdx, 1)[0].value;
+}
+
+/**
+ * Parsea los anexos I (bloque I) y II (bloque II) de la Resolución que
+ * publica la lista PROVISIONAL OFICIAL de interinos (a diferencia del Anexo I
+ * de parseListaInterinos, que es un documento previo — fase de exposición
+ * pública — sin la puntuación ya calculada por la propia CARM). Formato de
+ * tabla por fila: DNI, Apellidos y Nombre, especialidades acreditadas (X en
+ * columnas 031-039), Mayor Calificación Oposición Superada (solo anexo I) o
+ * Calificación Oposición Actual (solo anexo II), Experiencia Docente
+ * (b.1-b.4 + Total, SIN topar en b.1-b.4 — el tope de 10 solo se aplica ya en
+ * la columna Total), Puntos por oposiciones aprobadas en la RM desde 2000
+ * (solo anexo I) y Puntuación Total.
+ *
+ * El generador de este PDF imprime a veces dos o más números pegados en un
+ * único item de texto (ver extractDecimals) y, cuando algún valor alcanza dos
+ * dígitos ("10,0000"), su X de imprenta puede acercarse a la de la columna
+ * vecina más de lo que separa a las columnas entre sí — por eso las columnas
+ * con cabecera propia (b.1-b.4 y Total) se identifican por cercanía a su X de
+ * cabecera (pickClosest) en vez de por su posición de lectura, y las que no
+ * tienen cabecera individual (Mayor Calificación/Calificación Actual, Puntos
+ * por oposiciones superadas, Puntuación Total) se deducen por eliminación
+ * ordenando lo que queda por X ascendente — orden que sí es fiable porque esas
+ * tres columnas están bien separadas entre sí en la página (ver docstring de
+ * pickClosest y el desglose verificado en el propio desarrollo de esta
+ * función).
+ */
+export async function parseListaInterinosOficial(pdfPath) {
+  const lines = await extractLines(pdfPath);
+
+  const bloqueI = [];
+  const bloqueII = [];
+  let seccion = null; // null (antes de ANEXO I) | 'I' | 'II' | 'fin' (a partir de ANEXO III)
+  let columnas = null;
+  let headerXs = null;
+
+  for (const line of lines) {
+    const text = lineText(line);
+
+    if (text === 'ANEXO I') {
+      seccion = 'I';
+      columnas = null;
+      headerXs = null;
+      continue;
+    }
+    if (text === 'ANEXO II') {
+      seccion = 'II';
+      columnas = null;
+      headerXs = null;
+      continue;
+    }
+    if (text === 'ANEXO III') {
+      // El resto de anexos (no acreditados, alegaciones desestimadas, 55
+      // años, modificación de oficio, certificación penal, títulos a
+      // subsanar) no son listas ordenadas por puntuación — no forman parte
+      // de la bolsa y se ignoran.
+      seccion = 'fin';
+      continue;
+    }
+    if (seccion === null || seccion === 'fin') continue;
+
+    if (text.includes('b.1') && text.includes('b.4')) {
+      columnas = CODIGOS_ESPECIALIDAD.map((codigo) => ({ codigo, x: headerX(line, codigo) }));
+      headerXs = {
+        b1: headerX(line, 'b.1'),
+        b2: headerX(line, 'b.2'),
+        b3: headerX(line, 'b.3'),
+        b4: headerX(line, 'b.4'),
+        total: headerX(line, 'Total'),
+      };
+      continue;
+    }
+
+    const nifItem = line.items.find((it) => NIF_RE.test(it.str));
+    if (!nifItem || !columnas || !headerXs) continue;
+
+    const nombreTokens = [];
+    const especialidades = [];
+    for (const it of line.items) {
+      const s = it.str.trim();
+      if (s === nifItem.str) continue;
+      if (s === 'X') {
+        const col = columnas.find((c) => c.x != null && Math.abs(it.x - c.x) <= 13);
+        if (col) especialidades.push(col.codigo);
+        continue;
+      }
+      if (DECIMAL_RE.test(s)) continue; // se procesan aparte con extractDecimals, más abajo
+      if (/[A-Za-zÀ-ÿ]/.test(s)) nombreTokens.push(s);
+    }
+    const nombre = nombreTokens.join(' ').replace(/\s+,/g, ',').trim();
+    if (especialidades.length === 0) {
+      console.warn(`[parseListaInterinosOficial] anexo ${seccion}: sin especialidad acreditada reconocida para ${nifItem.str} ${nombre}`);
+    }
+
+    const decimals = extractDecimals(line.items);
+    const b1 = pickClosest(decimals, headerXs.b1) ?? 0;
+    const b2 = pickClosest(decimals, headerXs.b2) ?? 0;
+    const b3 = pickClosest(decimals, headerXs.b3) ?? 0;
+    const b4 = pickClosest(decimals, headerXs.b4) ?? 0;
+    const experienciaDocente = pickClosest(decimals, headerXs.total) ?? 0;
+    decimals.sort((a, b) => a.x - b.x);
+
+    const base = { nif: nifItem.str, nombre, especialidades, b1, b2, b3, b4, experienciaDocente };
+
+    if (seccion === 'I') {
+      if (decimals.length !== 3) {
+        console.warn(`[parseListaInterinosOficial] anexo I: ${decimals.length} valores sin clasificar (se esperaban 3) para ${nifItem.str} ${nombre}`);
+      }
+      const [mayorCalif, ptosOposSuperadas, puntuacionTotal] = decimals.map((d) => d.value);
+      bloqueI.push({
+        ...base,
+        notaMasAlta: mayorCalif ?? 0,
+        ptosOposSuperadas: ptosOposSuperadas ?? 0,
+        puntuacionTotal: puntuacionTotal ?? 0,
+      });
+    } else {
+      if (decimals.length !== 2) {
+        console.warn(`[parseListaInterinosOficial] anexo II: ${decimals.length} valores sin clasificar (se esperaban 2) para ${nifItem.str} ${nombre}`);
+      }
+      const [notaActual, puntuacionTotal] = decimals.map((d) => d.value);
+      bloqueII.push({
+        ...base,
+        notaActual: notaActual ?? 0,
+        puntuacionTotal: puntuacionTotal ?? 0,
+      });
+    }
+  }
+
+  return { bloqueI, bloqueII };
 }

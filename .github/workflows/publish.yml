@@ -52,12 +52,12 @@ jobs:
       # última vez (ver el timestamp en la URL, download.js). La key incluye
       # el run_id para que siempre se guarde una copia nueva al final; el
       # restore-keys recupera la más reciente que haya con ese prefijo al
-      # empezar. El PDF de la lista de interinos (sin timestamp en su URL,
-      # ver interinos.js) también cae dentro de esta carpeta, así que solo se
-      # descarga de verdad la primera vez — si la CARM publica una lista
-      # nueva, sigue haciendo falta borrar esa entrada de cache a mano (o
-      # actualizar la URL) para forzar una descarga nueva, automatizar esto
-      # no cambia esa limitación.
+      # empezar. Los PDFs de las dos listas de interinos (sin timestamp en su
+      # URL, ver interinos.js e interinos-oficial.js) también caen dentro de
+      # esta carpeta, así que solo se descargan de verdad la primera vez — si
+      # la CARM publica una lista nueva, sigue haciendo falta borrar esa
+      # entrada de cache a mano (o actualizar la URL) para forzar una
+      # descarga nueva, automatizar esto no cambia esa limitación.
       - name: Restaurar cache de PDFs descargados
         if: github.event_name != 'push'
         uses: actions/cache@v4
@@ -76,6 +76,11 @@ jobs:
         if: github.event_name != 'push'
         working-directory: scraper
         run: node interinos.js
+
+      - name: Cruzar la lista oficial de interinos con los opositores 2026
+        if: github.event_name != 'push'
+        working-directory: scraper
+        run: node interinos-oficial.js
 
       - name: Commitear datos nuevos si los hay
         if: github.event_name != 'push'

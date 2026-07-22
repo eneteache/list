@@ -123,3 +123,51 @@ export interface ListaInterinosDataset {
   especialidades: Record<string, string>;
   interinos: Interino[];
 }
+
+// A diferencia de Interino (bolsa aproximada por este proyecto), estos datos
+// vienen tal cual los publica la Resolución oficial de la CARM (Anexo I =
+// bloque I, Anexo II = bloque II, ya con la puntuación calculada por la
+// propia Administración) — no se recalcula nada aquí. El listado ya viene
+// reducido a quien además es opositor 2026 y todavía no tiene plaza
+// confirmada (ver runInterinosOficial); `posicionOficial` es su puesto real
+// dentro de su bloque en la Resolución (con huecos, al no incluir a quien no
+// es opositor 2026 o ya tiene plaza) — el frontend renumera este subconjunto
+// para la columna que se muestra (ver InterinosOficial.tsx).
+export interface InterinoOficial {
+  id: string;
+  nif: string;
+  nombre: string;
+  especialidades: string[];
+  bloque: BloqueInterino;
+  posicionOficial: number;
+  notaMasAlta: number | null;
+  notaActual: number | null;
+  b1: number;
+  b2: number;
+  b3: number;
+  b4: number;
+  experienciaDocente: number;
+  ptosOposSuperadas: number | null;
+  puntuacionTotal: number;
+  // Especialidad concreta de la oposición 2026 por la que ha optado (por la
+  // que se ha presentado a examen) y su estado en ella — no siempre coincide
+  // con sus especialidades acreditadas en la bolsa (`especialidades`): se
+  // puede optar a una especialidad sin estar acreditado como interino en
+  // ella, o al revés. Si se presenta a más de una (infrecuente), es la de
+  // código más bajo — el propio Anexo no dice cuál es "la" principal.
+  especialidadOpta: string;
+  estadoOpta: EstadoOposicion;
+  // true si a día de hoy va dentro del nº de plazas de esa especialidad, con
+  // la nota que se conozca hasta ahora — puede ser una estimación todavía
+  // provisional (nunca una plaza ya definitiva: esas se quitan del listado
+  // por completo, ver runInterinosOficial). Es la base del botón "Eliminar
+  // los que optan por plaza" de InterinosOficial.tsx.
+  plazaOpta: boolean;
+}
+
+export interface ListaInterinosOficialDataset {
+  generadoEn: string;
+  publicadoEn: string;
+  especialidades: Record<string, string>;
+  interinos: InterinoOficial[];
+}
