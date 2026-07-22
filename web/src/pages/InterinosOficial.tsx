@@ -19,23 +19,30 @@ const fmt = (n: number | null | undefined) => (n == null ? '—' : numFmt.format
 // `posicionOficial` (puesto real en la Resolución, con huecos: no incluye a
 // quien no es opositor 2026, ya tiene plaza definitiva, o —con el botón
 // activo— va dentro del nº de plazas de su especialidad opta) deja de servir
-// como "#" de la tabla en cuanto se filtra: por eso
-// `data` (más abajo) añade `posicionFiltrada`, una única secuencia 1..N+M
-// calculada sobre el subconjunto que esté visible en cada momento
-// (especialidad + botón, no el buscador) — TODO el Bloque I filtrado antes
-// que CUALQUIER Bloque II, con el Bloque II continuando la numeración justo
-// donde termina el Bloque I (si el Bloque I filtrado tiene 10, el primero del
-// Bloque II es el 11), igual que `posicion` en la lista de interinos
+// como "#" de la tabla en cuanto se filtra: por eso `renumerar` (más abajo)
+// calcula dos secuencias 1..N propias, ambas sobre el subconjunto filtrado
+// por especialidad/botón (no el buscador) — TODO el Bloque I antes que
+// CUALQUIER Bloque II, con el Bloque II continuando la numeración justo donde
+// termina el Bloque I, igual que `posicion` en la lista de interinos
 // aproximada (scraper/interinos.js) — no dos secuencias que empiezan las dos
 // en 1, que haría parecer competitivo a alguien de Bloque II que en el orden
-// real de la bolsa va muy por detrás de todo el Bloque I. El puesto real
-// dentro de su propio bloque se conserva en el tooltip de la columna.
-type Fila = InterinoOficial & { posicionFiltrada: number };
+// real va muy por detrás de todo el Bloque I:
+//  - posicionGeneral: puesto entre TODOS los aspirantes filtrados, sea cual
+//    sea su especialidad opta.
+//  - posicionEspecialidad: puesto solo entre quienes comparten su misma
+//    especialidad opta — se calcula sobre el conjunto SIN filtrar por el
+//    desplegable de especialidad (para que se vea aunque el desplegable esté
+//    en "Todas las especialidades"), aunque el botón "Eliminar los que optan
+//    por plaza" sí afecta a ambas.
+// El puesto real dentro de su propio bloque se conserva en el tooltip de la
+// columna general.
+type Fila = InterinoOficial & { posicionGeneral: number; posicionEspecialidad: number };
 
 const columnHelper = createColumnHelper<Fila>();
 
 const COLUMN_WIDTHS: Record<string, number> = {
-  posicionOficial: 70,
+  posicionGeneral: 70,
+  posicionEspecialidad: 70,
   nombre: 220,
   nif: 100,
   especialidades: 140,
@@ -81,18 +88,30 @@ function notaOposicionColumn() {
 
 function columnas(especialidades: Record<string, string>) {
   return [
-    // posicionFiltrada ya es una única secuencia bloque-I-luego-bloque-II
-    // (ver renumerar), así que basta con usarla tal cual como valor de orden
-    // — a diferencia de notaOposicionColumn no hace falta ningún desplazamiento
-    // artificial. El tooltip conserva el puesto real dentro de su propio
-    // bloque en la Resolución oficial.
-    columnHelper.accessor('posicionFiltrada', {
-      id: 'posicionOficial',
-      header: '#',
+    // posicionGeneral/posicionEspecialidad ya son secuencias propias
+    // bloque-I-luego-bloque-II (ver renumerar), así que basta con usarlas tal
+    // cual como valor de orden — a diferencia de notaOposicionColumn no hace
+    // falta ningún desplazamiento artificial. El tooltip conserva el puesto
+    // real dentro de su propio bloque en la Resolución oficial.
+    columnHelper.accessor('posicionGeneral', {
+      id: 'posicionGeneral',
+      header: '# general',
       cell: (info) => {
         const r = info.row.original;
         return (
           <span title={`Puesto real en la Resolución oficial (Bloque ${r.bloque}): ${r.posicionOficial}`}>
+            {info.getValue()}
+          </span>
+        );
+      },
+    }),
+    columnHelper.accessor('posicionEspecialidad', {
+      id: 'posicionEspecialidad',
+      header: '# especialidad',
+      cell: (info) => {
+        const r = info.row.original;
+        return (
+          <span title={`Puesto entre quienes optan a ${especialidades[r.especialidadOpta] ?? r.especialidadOpta} (Bloque ${r.bloque})`}>
             {info.getValue()}
           </span>
         );
@@ -154,17 +173,43 @@ function globalFilterFn(row: { original: Fila }, _colId: string, filterValue: st
   return nombre.toLowerCase().includes(q) || nif.toLowerCase().includes(q);
 }
 
-// Renumera en una única secuencia 1..N+M sobre la lista ya filtrada por
-// especialidad/botón: todo el Bloque I (por posicionOficial ascendente)
-// primero, y el Bloque II continúa la cuenta justo donde termina el Bloque I
-// — ver el comentario de Fila para el porqué.
-function renumerar(lista: InterinoOficial[]): Fila[] {
+// Todo el Bloque I (por posicionOficial ascendente) antes que CUALQUIER
+// Bloque II, con el Bloque II continuando la cuenta justo donde termina el
+// Bloque I — ver el comentario de Fila para el porqué. Devuelve la lista en
+// ese orden, sin numerar (cada llamador numera lo que necesite).
+function ordenarPorBloqueYPuntuacion(lista: InterinoOficial[]): InterinoOficial[] {
   const porBloque = (bloque: 'I' | 'II') => lista.filter((i) => i.bloque === bloque).sort((a, b) => a.posicionOficial - b.posicionOficial);
-  return [...porBloque('I'), ...porBloque('II')].map((i, idx) => ({ ...i, posicionFiltrada: idx + 1 }));
+  return [...porBloque('I'), ...porBloque('II')];
+}
+
+// Calcula posicionGeneral (entre todos) y posicionEspecialidad (solo entre
+// quienes comparten especialidadOpta) sobre la lista ya filtrada por el botón
+// "Eliminar los que optan por plaza" — sin filtrar todavía por el desplegable
+// de especialidad, para que posicionEspecialidad quede fija con independencia
+// de qué especialidad tenga seleccionada el desplegable (ver comentario de Fila).
+function renumerar(lista: InterinoOficial[]): Fila[] {
+  const posicionGeneralPorId = new Map(ordenarPorBloqueYPuntuacion(lista).map((i, idx) => [i.id, idx + 1]));
+
+  const porEspecialidad = new Map<string, InterinoOficial[]>();
+  for (const i of lista) {
+    const grupo = porEspecialidad.get(i.especialidadOpta) ?? [];
+    grupo.push(i);
+    porEspecialidad.set(i.especialidadOpta, grupo);
+  }
+  const posicionEspecialidadPorId = new Map<string, number>();
+  for (const grupo of porEspecialidad.values()) {
+    ordenarPorBloqueYPuntuacion(grupo).forEach((i, idx) => posicionEspecialidadPorId.set(i.id, idx + 1));
+  }
+
+  return lista.map((i) => ({
+    ...i,
+    posicionGeneral: posicionGeneralPorId.get(i.id)!,
+    posicionEspecialidad: posicionEspecialidadPorId.get(i.id)!,
+  }));
 }
 
 export function InterinosOficial({ dataset }: { dataset: ListaInterinosOficialDataset }) {
-  const [sorting, setSorting] = useState<SortingState>([{ id: 'posicionOficial', desc: false }]);
+  const [sorting, setSorting] = useState<SortingState>([{ id: 'posicionGeneral', desc: false }]);
   const [searchInput, setSearchInput] = useState('');
   const globalFilter = useDebouncedValue(searchInput);
   const [especialidad, setEspecialidad] = useState('todas');
@@ -173,17 +218,17 @@ export function InterinosOficial({ dataset }: { dataset: ListaInterinosOficialDa
   const columns = useMemo(() => columnas(dataset.especialidades), [dataset]);
 
   const data = useMemo(() => {
-    let filtrados = dataset.interinos;
-    if (especialidad !== 'todas') {
-      filtrados = filtrados.filter((i) => i.especialidadOpta === especialidad);
-    }
-    if (eliminarOptanPlaza) {
-      filtrados = filtrados.filter((i) => !i.plazaOpta);
-    }
+    // El botón sí afecta a ambas posiciones (quita filas del cálculo), pero
+    // el desplegable de especialidad se aplica DESPUÉS de numerar, para que
+    // posicionEspecialidad no cambie según qué especialidad esté seleccionada
+    // (ver renumerar).
+    const base = eliminarOptanPlaza ? dataset.interinos.filter((i) => !i.plazaOpta) : dataset.interinos;
+    const numerados = renumerar(base);
+    const visibles = especialidad === 'todas' ? numerados : numerados.filter((i) => i.especialidadOpta === especialidad);
     // Orden base alfabético (desempate estable para columnas con empates,
     // p.ej. puntuacionTotal repetida) — el orden por defecto lo aplica
     // getSortedRowModel a partir de `sorting`, ver más abajo.
-    return renumerar(filtrados).sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
+    return visibles.sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
   }, [dataset, especialidad, eliminarOptanPlaza]);
 
   const table = useReactTable({
@@ -206,13 +251,17 @@ export function InterinosOficial({ dataset }: { dataset: ListaInterinosOficialDa
     <div>
       <p className="nota-aprox" style={{ display: 'block', marginBottom: 16 }}>
         Lista oficial de interinos publicada por la CARM (Resolución de {dataset.publicadoEn}, Anexo I = Bloque I,
-        Anexo II = Bloque II), sin recalcular nada: puntuación y puesto real ("#", en el tooltip) son tal cual los
-        publica la propia Administración. Reducida a quien además es <strong>opositor 2026</strong> — columna "Esp.
-        opta", con la especialidad por la que se ha presentado a examen este año y su estado en ella — y todavía no
-        tiene plaza <strong>definitiva</strong> en ninguna especialidad (nota final real, con concurso y oposición ya
-        resueltos — no basta con ir dentro del nº de plazas con una nota todavía provisional, que puede cambiar o
-        quedar sin cubrir): a quien ya la tiene se le quita de este listado por completo. No es una publicación
-        oficial en sí misma: verifica siempre tu situación en la Resolución original.
+        Anexo II = Bloque II), sin recalcular nada: puntuación y puesto real (en el tooltip de "# general") son tal
+        cual los publica la propia Administración. Reducida a quien además es <strong>opositor 2026</strong> —
+        columna "Esp. opta", con la especialidad por la que se ha presentado a examen este año y su estado en ella —
+        y todavía no tiene plaza <strong>definitiva</strong> en ninguna especialidad (nota final real, con concurso y
+        oposición ya resueltos — no basta con ir dentro del nº de plazas con una nota todavía provisional, que puede
+        cambiar o quedar sin cubrir): a quien ya la tiene se le quita de este listado por completo. "# general" es el
+        puesto entre todos los aspirantes de la tabla, sea cual sea su especialidad; "# especialidad" es el puesto
+        solo entre quienes optan a la misma especialidad (columna "Esp. opta") — ambos se recalculan sobre el
+        subconjunto filtrado por el botón "Eliminar los que optan por plaza", pero "# especialidad" no cambia al
+        elegir una especialidad en el desplegable, que solo oculta filas. No es una publicación oficial en sí misma:
+        verifica siempre tu situación en la Resolución original.
       </p>
       <div className="toolbar">
         <select
