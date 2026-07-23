@@ -127,12 +127,14 @@ export interface ListaInterinosDataset {
 // A diferencia de Interino (bolsa aproximada por este proyecto), estos datos
 // vienen tal cual los publica la Resolución oficial de la CARM (Anexo I =
 // bloque I, Anexo II = bloque II, ya con la puntuación calculada por la
-// propia Administración) — no se recalcula nada aquí. El listado ya viene
-// reducido a quien además es opositor 2026 y todavía no tiene plaza
-// confirmada (ver runInterinosOficial); `posicionOficial` es su puesto real
-// dentro de su bloque en la Resolución (con huecos, al no incluir a quien no
-// es opositor 2026 o ya tiene plaza) — el frontend renumera este subconjunto
-// para la columna que se muestra (ver InterinosOficial.tsx).
+// propia Administración) — no se recalcula nada aquí. El listado incluye a
+// TODOS los aspirantes de Anexo I/II sin excluir a nadie (estar en la bolsa
+// no requiere haberse presentado a la oposición 2026, ver runInterinosOficial
+// — un procedimiento selectivo distinto); la exclusión por plaza es cosa del
+// frontend (botón "Eliminar los que optan por plaza" en InterinosOficial.tsx),
+// no de este dataset. `posicionOficial` es su puesto real dentro de su bloque
+// en la Resolución — el frontend calcula sus propias renumeraciones sobre el
+// subconjunto que tenga visible en cada momento (ver InterinosOficial.tsx).
 export interface InterinoOficial {
   id: string;
   nif: string;
@@ -150,18 +152,19 @@ export interface InterinoOficial {
   ptosOposSuperadas: number | null;
   puntuacionTotal: number;
   // Especialidad concreta de la oposición 2026 por la que ha optado (por la
-  // que se ha presentado a examen) y su estado en ella — no siempre coincide
-  // con sus especialidades acreditadas en la bolsa (`especialidades`): se
-  // puede optar a una especialidad sin estar acreditado como interino en
-  // ella, o al revés. Si se presenta a más de una (infrecuente), es la de
-  // código más bajo — el propio Anexo no dice cuál es "la" principal.
-  especialidadOpta: string;
-  estadoOpta: EstadoOposicion;
+  // que se ha presentado a examen) y su estado en ella — null cuando esta
+  // persona no es opositora 2026 (el caso más frecuente: la mayoría de la
+  // bolsa no se presenta cada año). No siempre coincide con sus
+  // especialidades acreditadas en la bolsa (`especialidades`): se puede optar
+  // a una especialidad sin estar acreditado como interino en ella, o al
+  // revés. Si se presenta a más de una (infrecuente), es la de código más
+  // bajo — el propio Anexo no dice cuál es "la" principal.
+  especialidadOpta: string | null;
+  estadoOpta: EstadoOposicion | null;
   // true si a día de hoy va dentro del nº de plazas de esa especialidad, con
-  // la nota que se conozca hasta ahora — puede ser una estimación todavía
-  // provisional (nunca una plaza ya definitiva: esas se quitan del listado
-  // por completo, ver runInterinosOficial). Es la base del botón "Eliminar
-  // los que optan por plaza" de InterinosOficial.tsx.
+  // la nota que se conozca hasta ahora (definitiva o todavía provisional) —
+  // false si no es opositor 2026 o no le llega. Es la base del botón
+  // "Eliminar los que optan por plaza" de InterinosOficial.tsx.
   plazaOpta: boolean;
 }
 

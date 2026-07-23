@@ -10,14 +10,24 @@ import { conGeneradoEnEstable } from './lib/generadoEn.js';
  * interinos (Anexo I = bloque I, Anexo II = bloque II, ya con la puntuación
  * calculada por la propia CARM — a diferencia de scraper/interinos.js, que
  * aproxima esa misma bolsa desde un documento previo, el Anexo I de la fase
- * de exposición pública), genera un listado reducido a quienes son también
- * OPOSITORES de la convocatoria 2026 en curso (cruzando por NIF+nombre contra
- * out/<especialidad>.json de las 8 especialidades convocadas, igual que
- * runInterinos) y que todavía no tienen plaza DEFINITIVA en ninguna de ellas
- * (notaFinal real, concurso y oposición ya resueltos — una estimación
- * provisional dentro del nº de plazas no cuenta, puede cambiar o quedar sin
- * cubrir) — a quien ya la tiene se le "quita" de este listado (no se marca,
- * se excluye del todo): esa persona deja de necesitar la bolsa.
+ * de exposición pública), genera un listado con TODOS los aspirantes de
+ * Anexo I/II, sin excluir a nadie: el resuelvo undécimo de la propia
+ * Resolución dice que la lista definitiva de interinidad para el curso
+ * 2026-2027 "estará formada exclusivamente por aquellos aspirantes que
+ * cumplan los requisitos establecidos en el artículo 96" — ese artículo trata
+ * de acreditación de méritos, no de haberse presentado a la oposición 2026
+ * (un procedimiento selectivo aparte); estar en Anexo I/II ya implica cumplir
+ * ese requisito, con independencia de si esta persona opta también este año a
+ * la oposición. Por eso NO se filtra por ser opositor 2026: se cruza por
+ * NIF+nombre contra out/<especialidad>.json (igual que runInterinos) solo
+ * para, cuando exista, anotar en qué especialidad opta este año y su estado
+ * — especialidadOpta/estadoOpta/plazaOpta quedan a null/false cuando no hay
+ * cruce, no se descarta la fila.
+ *
+ * Tampoco se excluye aquí a quien ya tiene plaza (definitiva o provisional):
+ * esa decisión es del frontend, vía el botón "Eliminar los que optan por
+ * plaza" (ver InterinosOficial.tsx), para que sea reversible y quede claro
+ * cuánta gente afecta en vez de desaparecer en silencio del dataset.
  *
  * A diferencia de runInterinos (que SÍ rebarema y reordena toda la bolsa
  * regional), aquí no se recalcula nada: notaMasAlta/notaActual/experiencia
@@ -78,47 +88,32 @@ export async function runInterinosOficial(config) {
   const candidatos2026PorNif = groupByNif(todosCandidatos2026);
 
   function cruzar(lista, bloque) {
-    const resultado = [];
-    lista.forEach((c, idx) => {
+    return lista.map((c, idx) => {
       const candidatosNif = candidatos2026PorNif.get(c.nif) ?? [];
       const matches = candidatosNif.filter((m) => nombresCompatibles(m.nombre, c.nombre));
-      if (matches.length === 0) return; // no es opositor 2026 — fuera de este listado
-
-      // Solo cuenta como plaza obtenida la que ya es definitiva: notaFinal
-      // real (concurso Y oposición resueltos, ver unify.js), no una
-      // estimación provisional (posicionProvisional true, notaFinalAprox) —
-      // un "pendiente" puede figurar dentro del nº de plazas con la nota que
-      // lleva hasta ahora y acabar sin plaza en cuanto su tribunal resuelva.
-      // Tampoco todas las plazas convocadas tienen por qué cubrirse (turno
-      // general o de discapacidad pueden quedar con menos aprobados
-      // definitivos que plazas), así que no basta con "va dentro del nº de
-      // plazas" sin más.
-      const tienePlaza = matches.some((m) => m.plazaObtenida === true && m.posicionProvisional === false);
-      if (tienePlaza) return; // ya tiene plaza definitiva — se "quita" del listado
 
       // La especialidad por la que ha optado este año (por la que se ha
       // presentado a examen), con su estado en ella — a diferencia de las
       // "especialidades acreditadas" del propio documento oficial (columnas
       // 031-039), que no dicen nada sobre si se ha presentado o no a la
-      // oposición 2026. Lo normal es un único match; en el puñado de casos
-      // (~0,1%) en que la misma persona se presenta a más de una especialidad
-      // el mismo año se toma la de código más bajo como principal — no hay
-      // ningún dato en las fuentes que diga cuál es "la" opositada.
+      // oposición 2026. Null cuando no es opositor 2026 (la mayoría: estar en
+      // la bolsa no requiere presentarse este año, ver docstring). Lo normal,
+      // cuando sí lo es, es un único match; en el puñado de casos (~0,1%) en
+      // que la misma persona se presenta a más de una especialidad el mismo
+      // año se toma la de código más bajo como principal — no hay ningún dato
+      // en las fuentes que diga cuál es "la" opositada.
       const matchesConEspecialidad = matches.filter((m) => m.especialidadCodigo).sort((a, b) => a.especialidadCodigo.localeCompare(b.especialidadCodigo));
-      const principal = matchesConEspecialidad[0];
-      if (!principal) return; // no se pudo determinar la especialidad opositada — no aporta nada a este listado
+      const principal = matchesConEspecialidad[0] ?? null;
 
       // Si a día de hoy va dentro del nº de plazas de su especialidad opta,
-      // con la nota que se conozca hasta ahora (real o todavía provisional) —
-      // a diferencia de `tienePlaza` de más arriba, aquí SÍ vale una
-      // estimación provisional: es solo para el botón "Eliminar los que
-      // optan por plaza" del frontend (una vista informativa que se puede
-      // alternar), no para excluir a nadie del listado de forma permanente.
-      // Como `tienePlaza` ya ha descartado cualquier plaza DEFINITIVA, un
-      // `plazaOpta: true` aquí es, por construcción, siempre provisional.
-      const plazaOpta = principal.plazaObtenida === true;
+      // con la nota que se conozca hasta ahora (real o todavía provisional).
+      // No excluye a nadie aquí: es solo el dato que usa el botón "Eliminar
+      // los que optan por plaza" del frontend (ver docstring) para poder
+      // esconder, de forma reversible, tanto a quien ya tiene la plaza
+      // asegurada como a quien todavía va con una estimación provisional.
+      const plazaOpta = principal?.plazaObtenida === true;
 
-      resultado.push({
+      return {
         id: `${c.nif}|${c.nombre}|${bloque}|${idx}`,
         nif: c.nif,
         nombre: c.nombre,
@@ -134,12 +129,11 @@ export async function runInterinosOficial(config) {
         experienciaDocente: c.experienciaDocente,
         ptosOposSuperadas: bloque === 'I' ? c.ptosOposSuperadas : null,
         puntuacionTotal: c.puntuacionTotal,
-        especialidadOpta: principal.especialidadCodigo,
-        estadoOpta: principal.estadoOposicion,
+        especialidadOpta: principal?.especialidadCodigo ?? null,
+        estadoOpta: principal?.estadoOposicion ?? null,
         plazaOpta,
-      });
+      };
     });
-    return resultado;
   }
 
   const interinos = [...cruzar(bloqueI, 'I'), ...cruzar(bloqueII, 'II')];
@@ -156,8 +150,10 @@ export async function runInterinosOficial(config) {
   const outputEstable = conGeneradoEnEstable(outPath, output);
   fs.writeFileSync(outPath, JSON.stringify(outputEstable, null, 2));
 
+  const conOpta = interinos.filter((i) => i.especialidadOpta != null).length;
+  const conPlazaOpta = interinos.filter((i) => i.plazaOpta).length;
   console.log(
-    `[interinos-oficial] ${interinos.length} interinos oficiales que también son opositores 2026 sin plaza confirmada (de ${bloqueI.length + bloqueII.length} en la Resolución). Escrito en ${outPath}`
+    `[interinos-oficial] ${interinos.length} interinos oficiales (Bloque I: ${bloqueI.length}, Bloque II: ${bloqueII.length}), de los cuales ${conOpta} son también opositores 2026 y ${conPlazaOpta} van hoy dentro del nº de plazas de su especialidad opta. Escrito en ${outPath}`
   );
 
   return outputEstable;

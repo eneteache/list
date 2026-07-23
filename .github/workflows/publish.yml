@@ -10,7 +10,12 @@ on:
   # Descarga/unifica/rebarema todo de cero contra educarm.es y, si hay
   # cambios, los commitea antes de compilar y publicar — todo en el mismo
   # run, sin depender de que ese commit dispare otro workflow (un push hecho
-  # con el GITHUB_TOKEN por defecto no dispara otros workflows).
+  # con el GITHUB_TOKEN por defecto no dispara otros workflows). Se salta
+  # solo (job "check_completo") en cuanto todos los tribunales de las 8
+  # especialidades ya han publicado baremación y fase de oposición: a partir
+  # de ahí la tabla principal no puede cambiar más, así que seguir
+  # scrapeando cada 4h no descubriría nada nuevo — usa "Run workflow" (abajo)
+  # si necesitas forzar una comprobación de todos modos.
   schedule:
     # Cada 4h (sintaxis cron habitual) — cambia esta línea para ajustar la
     # frecuencia.
@@ -36,13 +41,42 @@ jobs:
         with:
           node-version: 20
 
+      # Una vez TODOS los tribunales de las 8 especialidades han publicado
+      # baremación (concurso) Y fase de oposición — el último documento que
+      # falta siempre, ver README "Limitaciones conocidas" — la tabla
+      # principal ya no puede cambiar más: seguir scrapeando cada 4h contra
+      # educarm.es a partir de ahí no descubre nada nuevo, solo gasta minutos
+      # de Action. Se comprueba contra lo ya commiteado en web/src/data (no
+      # hace falta instalar nada más para leer JSON) y solo se usa para
+      # decidir si saltarse el resto del scraping en una ejecución programada
+      # — un push o un "Run workflow" manual siempre scrapean, por si esta
+      # comprobación se queda desactualizada (especialidad nueva sin tribunal
+      # cerrado, o alguna corrección posterior de un tribunal).
+      - name: Comprobar si todos los tribunales ya han publicado toda su documentación
+        id: check_completo
+        if: github.event_name == 'schedule'
+        run: |
+          node -e "
+            const fs = require('fs');
+            const especialidades = JSON.parse(fs.readFileSync('scraper/config/especialidades.json', 'utf8'));
+            let completo = true;
+            for (const key of Object.keys(especialidades)) {
+              const rutaDataset = 'web/src/data/' + key + '.json';
+              if (!fs.existsSync(rutaDataset)) { completo = false; break; }
+              const dataset = JSON.parse(fs.readFileSync(rutaDataset, 'utf8'));
+              if (!dataset.tribunales.every((t) => t.tieneBaremacion && t.tieneFaseOposicion)) { completo = false; break; }
+            }
+            console.log('¿todos los tribunales completos?', completo);
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, 'completo=' + completo + '\n');
+          "
+
       - name: Instalar dependencias del scraper
-        if: github.event_name != 'push'
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.check_completo.outputs.completo != 'true')
         working-directory: scraper
         run: npm ci
 
       - name: Instalar navegador de Playwright
-        if: github.event_name != 'push'
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.check_completo.outputs.completo != 'true')
         working-directory: scraper
         run: npx playwright install --with-deps chromium
 
@@ -59,7 +93,7 @@ jobs:
       # entrada de cache a mano (o actualizar la URL) para forzar una
       # descarga nueva, automatizar esto no cambia esa limitación.
       - name: Restaurar cache de PDFs descargados
-        if: github.event_name != 'push'
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.check_completo.outputs.completo != 'true')
         uses: actions/cache@v4
         with:
           path: scraper/raw
@@ -68,22 +102,22 @@ jobs:
             scraper-raw-
 
       - name: Descargar y unificar todas las especialidades
-        if: github.event_name != 'push'
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.check_completo.outputs.completo != 'true')
         working-directory: scraper
         run: node run.js --all
 
       - name: Rebaremar la lista de interinos
-        if: github.event_name != 'push'
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.check_completo.outputs.completo != 'true')
         working-directory: scraper
         run: node interinos.js
 
       - name: Cruzar la lista oficial de interinos con los opositores 2026
-        if: github.event_name != 'push'
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.check_completo.outputs.completo != 'true')
         working-directory: scraper
         run: node interinos-oficial.js
 
       - name: Commitear datos nuevos si los hay
-        if: github.event_name != 'push'
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.check_completo.outputs.completo != 'true')
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

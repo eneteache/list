@@ -35,8 +35,9 @@ const fmt = (n: number | null | undefined) => (n == null ? '—' : numFmt.format
 //    en "Todas las especialidades"), aunque el botón "Eliminar los que optan
 //    por plaza" sí afecta a ambas.
 // El puesto real dentro de su propio bloque se conserva en el tooltip de la
-// columna general.
-type Fila = InterinoOficial & { posicionGeneral: number; posicionEspecialidad: number };
+// columna general. posicionEspecialidad es null cuando no es opositor 2026
+// (especialidadOpta null): no participa en ningún ranking por especialidad.
+type Fila = InterinoOficial & { posicionGeneral: number; posicionEspecialidad: number | null };
 
 const columnHelper = createColumnHelper<Fila>();
 
@@ -105,17 +106,21 @@ function columnas(especialidades: Record<string, string>) {
         );
       },
     }),
-    columnHelper.accessor('posicionEspecialidad', {
+    columnHelper.accessor((r) => r.posicionEspecialidad ?? undefined, {
       id: 'posicionEspecialidad',
       header: '# especialidad',
       cell: (info) => {
         const r = info.row.original;
+        if (r.posicionEspecialidad == null || r.especialidadOpta == null) {
+          return <span title="No es opositor 2026: no participa en ningún ranking por especialidad">—</span>;
+        }
         return (
           <span title={`Puesto entre quienes optan a ${especialidades[r.especialidadOpta] ?? r.especialidadOpta} (Bloque ${r.bloque})`}>
-            {info.getValue()}
+            {r.posicionEspecialidad}
           </span>
         );
       },
+      sortUndefined: 'last',
     }),
     columnHelper.accessor('nombre', { header: 'Apellidos y nombre' }),
     columnHelper.accessor('nif', { header: 'NIF' }),
@@ -131,10 +136,14 @@ function columnas(especialidades: Record<string, string>) {
       },
       enableSorting: false,
     }),
-    columnHelper.accessor('especialidadOpta', {
+    columnHelper.accessor((r) => r.especialidadOpta ?? undefined, {
+      id: 'especialidadOpta',
       header: 'Esp. opta',
       cell: (info) => {
         const r = info.row.original;
+        if (r.especialidadOpta == null || r.estadoOpta == null) {
+          return <span title="No se ha presentado a la oposición 2026 en ninguna especialidad">—</span>;
+        }
         return (
           <span
             className={`badge ${ESTADO_BADGE[r.estadoOpta]}`}
@@ -144,6 +153,7 @@ function columnas(especialidades: Record<string, string>) {
           </span>
         );
       },
+      sortUndefined: 'last',
     }),
     notaOposicionColumn(),
     columnHelper.accessor('experienciaDocente', {
@@ -190,8 +200,11 @@ function ordenarPorBloqueYPuntuacion(lista: InterinoOficial[]): InterinoOficial[
 function renumerar(lista: InterinoOficial[]): Fila[] {
   const posicionGeneralPorId = new Map(ordenarPorBloqueYPuntuacion(lista).map((i, idx) => [i.id, idx + 1]));
 
+  // Quien no es opositor 2026 (especialidadOpta null) no participa en ningún
+  // ranking por especialidad — se queda sin posicionEspecialidad.
   const porEspecialidad = new Map<string, InterinoOficial[]>();
   for (const i of lista) {
+    if (i.especialidadOpta == null) continue;
     const grupo = porEspecialidad.get(i.especialidadOpta) ?? [];
     grupo.push(i);
     porEspecialidad.set(i.especialidadOpta, grupo);
@@ -204,7 +217,7 @@ function renumerar(lista: InterinoOficial[]): Fila[] {
   return lista.map((i) => ({
     ...i,
     posicionGeneral: posicionGeneralPorId.get(i.id)!,
-    posicionEspecialidad: posicionEspecialidadPorId.get(i.id)!,
+    posicionEspecialidad: posicionEspecialidadPorId.get(i.id) ?? null,
   }));
 }
 
@@ -252,16 +265,18 @@ export function InterinosOficial({ dataset }: { dataset: ListaInterinosOficialDa
       <p className="nota-aprox" style={{ display: 'block', marginBottom: 16 }}>
         Lista oficial de interinos publicada por la CARM (Resolución de {dataset.publicadoEn}, Anexo I = Bloque I,
         Anexo II = Bloque II), sin recalcular nada: puntuación y puesto real (en el tooltip de "# general") son tal
-        cual los publica la propia Administración. Reducida a quien además es <strong>opositor 2026</strong> —
-        columna "Esp. opta", con la especialidad por la que se ha presentado a examen este año y su estado en ella —
-        y todavía no tiene plaza <strong>definitiva</strong> en ninguna especialidad (nota final real, con concurso y
-        oposición ya resueltos — no basta con ir dentro del nº de plazas con una nota todavía provisional, que puede
-        cambiar o quedar sin cubrir): a quien ya la tiene se le quita de este listado por completo. "# general" es el
-        puesto entre todos los aspirantes de la tabla, sea cual sea su especialidad; "# especialidad" es el puesto
-        solo entre quienes optan a la misma especialidad (columna "Esp. opta") — ambos se recalculan sobre el
-        subconjunto filtrado por el botón "Eliminar los que optan por plaza", pero "# especialidad" no cambia al
-        elegir una especialidad en el desplegable, que solo oculta filas. No es una publicación oficial en sí misma:
-        verifica siempre tu situación en la Resolución original.
+        cual los publica la propia Administración. Incluye a <strong>todos</strong> los aspirantes de Anexo I/II, no
+        solo a quien se presenta a la oposición 2026 — la propia Resolución dice que la lista definitiva de
+        interinidad para el curso 2026-2027 la forman quienes cumplan el artículo 96 (acreditación de méritos),
+        con independencia de si opositan este año. Quien sí oposite lleva su especialidad y estado en la columna
+        "Esp. opta" (en blanco quien no se ha presentado a ninguna); nadie se excluye por tener plaza de forma
+        automática — usa el botón "Eliminar los que optan por plaza" para esconder, de forma reversible, a quien
+        hoy va dentro del nº de plazas de su especialidad opta (con nota definitiva o todavía provisional). "#
+        general" es el puesto entre todos los aspirantes de la tabla, sea cual sea su especialidad; "# especialidad"
+        es el puesto solo entre quienes optan a la misma especialidad (en blanco quien no opositó) — ambos se
+        recalculan sobre el subconjunto filtrado por el botón, pero "# especialidad" no cambia al elegir una
+        especialidad en el desplegable, que solo oculta filas. No es una publicación oficial en sí misma: verifica
+        siempre tu situación en la Resolución original.
       </p>
       <div className="toolbar">
         <select
@@ -287,7 +302,7 @@ export function InterinosOficial({ dataset }: { dataset: ListaInterinosOficialDa
           <button
             className={eliminarOptanPlaza ? 'segmented-active' : ''}
             onClick={() => setEliminarOptanPlaza((v) => !v)}
-            title="Esconde a quien, con la nota que se conoce hasta ahora (real o todavía provisional), va dentro del nº de plazas de la especialidad por la que ha optado este año (columna Esp. opta)"
+            title="Esconde a quien, con la nota que se conoce hasta ahora, va dentro del nº de plazas de la especialidad por la que ha optado este año (columna Esp. opta) — tanto si la plaza ya es definitiva como si todavía es una estimación provisional"
           >
             Eliminar los que optan por plaza
           </button>
